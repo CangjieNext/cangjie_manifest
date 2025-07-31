@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest>
+  <remote fetch="https://gitcode.com/Cangjie" name="origin" review="https://gitcode.com/Cangjie/"/>
+  <default remote="origin" revision="dev" sync-j="4"/>
+
+  <include name="cangjie/cangjie.xml"/>
+</manifest>
