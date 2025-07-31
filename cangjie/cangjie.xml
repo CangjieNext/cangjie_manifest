@@ -4,7 +4,6 @@
   <project groups="cangjie" name="cangjie_compiler" path="cangjie_compiler" remote="origin" revision="main"/>
   <project groups="cangjie" name="cangjie_runtime" path="cangjie_runtime" remote="origin" revision="main"/>
   <project groups="cangjie" name="cangjie_tools" path="cangjie_tools" remote="origin" revision="main"/>
-  <project groups="cangjie" name="cangjie_stdx" path="cangjie_stdx" remote="origin" revision="main"/>
   <project groups="cangjie" name="cangjie_test" path="cangjie_test" remote="origin" revision="main"/>
   <project groups="cangjie" name="cangjie_test_framework" path="cangjie_test_framework" remote="origin" revision="main"/>
   <project groups="cangjie" name="cangjie_docs" path="cangjie_docs" remote="origin" revision="main"/>
