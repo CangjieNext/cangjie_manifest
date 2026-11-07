@@ -1,5 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><manifest>
-  <remote fetch="https://gitcode.com/Cangjie" name="origin" review="https://gitcode.com/Cangjie/"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!--
+    CangjieNext manifest for the repo tool.
+
+    The remote uses a RELATIVE fetch ("." ) so the project URL is resolved
+    against the URL given to `repo init -u`. One manifest serves everyone:
+
+      # Owner / core developer (SSH):
+      repo init -u git@github.com:CangjieNext/cangjie_manifest.git -b main
+      repo sync -c
+
+      # Fork developer (SSH or HTTPS, same manifest):
+      repo init -u git@github.com:YourName/cangjie_manifest.git -b main
+      repo sync -c
+
+      # CI / read-only (HTTPS):
+      repo init -u https://github.com/CangjieNext/cangjie_manifest.git -b main
+      repo sync -c
+
+    Groups:
+      default            core 7 repos, synced by default
+      llvm               llvm-project pinned to the upstream commit
+                         required by cangjie_compiler (NOT synced by default)
+      vscode             VSCode extension (NOT synced by default)
+      plugins            DevEco / IDE plugins (NOT synced by default)
+
+    Full build (compiler needs llvm at a fixed path):
+      repo init ... -g default,llvm
+      repo sync -c
+
+    Or add optional groups later on an existing client:
+      repo sync -g llvm            (one-off)
+      repo init ... -g llvm        (persistent)
+  -->
+  <remote name="origin" fetch="." review="https://github.com/CangjieNext/"/>
   <default remote="origin" revision="main" sync-j="4"/>
 
   <include name="cangjie/cangjie.xml"/>
