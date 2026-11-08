@@ -65,8 +65,7 @@ repo sync -c
 repo sync -g llvm
 ```
 
-Then follow the build guides in [`cangjie_build/docs`](https://github.com/CangjieNext/cangjie_build)
-(`docs/linux.md`, `docs/macos.md`, ...).
+Then follow the build guides in [`cangjie_build/docs`](https://github.com/CangjieNext/cangjie_build) (`docs/linux.md`, `docs/macos.md`, `docs/windows.md`, ...).
 
 ## Tips
 

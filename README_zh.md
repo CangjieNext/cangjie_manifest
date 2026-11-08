@@ -63,7 +63,7 @@ repo sync -g llvm
 ```
 
 随后按照 [`cangjie_build/docs`](https://github.com/CangjieNext/cangjie_build)
-中的构建指南操作（`docs/linux.md`、`docs/macos.md` 等）。
+中的构建指南操作（`docs/linux.md`、`docs/macos.md`、`docs/windows.md` 等）。
 
 ## 常用技巧
 
