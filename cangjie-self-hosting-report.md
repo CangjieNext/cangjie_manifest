@@ -6,6 +6,8 @@
 
 自举的合理路径不是一次性重写整个工具链，而是**增量式自举**：先用仓颉实现一个"前端 + 中端"（解析、语义分析、LLVM IR 发射），复用官方已开源的 LLVM 后端与仓颉运行时完成代码生成；当该编译器能够编译自身并通过官方测试套件时，即达成自举闭环。业界先例（Rust、Go）以及 LLVM 官方文档均支持这一路径[cite:12]。
 
+> **核验说明**：本报告的关键论断已在本地克隆的官方源码中逐条核实（见[第五节](#五第一手源码核验本地克隆)）：核心可行性结论全部被第一手证据证实；两处二手资料表述被修正（`std.ast` 的 FFI 本质、cjpm 的"自举"说法），三处事实得到增补（前端目录全貌、CJ Pass 注册细节、标准库实为 30 个包）。修正不改变结论，反而强化了"复用官方后端 + FFI 混合实现"这条路径的可行性。
+
 ---
 
 ## 一、问题定义
@@ -25,8 +27,8 @@
 
 2025 年 7 月 31 日，仓颉正式开源，范围覆盖编译器、运行时、标准库、工具链、测试用例与测试框架[cite:4][cite:5]。其中 `cangjie_compiler` 仓库包含：
 
-- **前端（C++）**：`src/Lex`（词法）、`src/Parse`（语法）、`src/Sema`（语义/类型检查/泛型实例化）、`src/Macro`（宏展开）、`src/Mangle`（名称修饰）、`src/Modules`（包管理，FlatBuffers 序列化的 `.cjo` 格式）、`src/ConditionalCompilation`（条件编译）、`src/CHIR`（高层中间表示及优化、解释器）、`src/CodeGen`（CHIR → LLVM IR）[cite:1][cite:2][cite:3]。
-- **LLVM 后端**：官方维护的 llvm-project fork，包含 `opt`、`llc`、`ld` 与调试器，并新增了仓颉专属优化 Pass[cite:2][cite:7]。
+- **前端（C++）**（本地核验：[src/](file:///workspace/repos/cangjie_compiler/src)）：`src/Lex`（词法）、`src/Parse`（语法）、`src/Sema`（语义/类型检查/泛型实例化——231 个 .cpp，为全仓最大模块）、`src/Macro`（宏展开）、`src/Mangle`（名称修饰）、`src/Modules`（包管理，FlatBuffers 序列化的 `.cjo` 格式）、`src/ConditionalCompilation`（条件编译）、`src/CHIR`（高层中间表示及优化、解释器）、`src/CodeGen`（CHIR → LLVM IR），另有 `src/AST`、`src/Basic`、`src/Frontend`/`src/FrontendTool`、`src/IncrementalCompilation`、`src/Option`、`src/Utils`；`.cjo` schema 在 [schema/CjoFormat.fbs](file:///workspace/repos/cangjie_compiler/schema)，同目录还有 `CachedASTFormat.fbs`、`MacroMsgFormat.fbs`、`StdAstFormat.fbs`、`StdxChirFormat.fbs` 共 5 个 FlatBuffers schema；入口为 [src/main.cpp](file:///workspace/repos/cangjie_compiler/src/main.cpp)，构建入口为 [build.py](file:///workspace/repos/cangjie_compiler/build.py)[cite:1][cite:2][cite:3]。
+- **LLVM 后端**：官方维护的 llvm-project fork，包含 `opt`、`llc`、`ld` 与调试器，并新增了仓颉专属优化 Pass——本地核验确认 `CJRewriteStatepoint`、`CJBarrierOpt`、`CJBarrierSplit`、`CJFillMetadata`、`CJRuntimeLowering`、`CJDevirtualOpt`、`CJPartialEscapeAnalysis` 等 12 个以上 CJ Pass 均注册于 [llvm/lib/Passes/PassBuilder.cpp](file:///workspace/repos/llvm-project/llvm/lib/Passes/PassBuilder.cpp) 的 CJPipeline 中[cite:2][cite:7]。
 
 这意味着语义规则、ABI、名称修饰、`.cjo` 格式 schema 全部可参考源码实现，自举不存在"黑盒逆向"问题。
 
@@ -35,14 +37,14 @@
 | 能力 | 证据 | 对自举的意义 |
 |------|------|--------------|
 | **C 互操作（FFI）** | `foreign func`、`@C struct`、`CPointer<T>`、`CFunc` 回调、`unsafe` 边界；类型映射规则明确[cite:11] | 可绑定 LLVM-C API、libclang，或调用任意 C 编译基础设施 |
-| **`std.ast` 语法解析库** | 提供 `cangjieLex(String)`（字符串→Tokens）、`parseProgram`、`parseDecl`、`parseExpr`、`parseType`、`parsePattern` 及 Fragment 系列函数，AST 节点类体系完整开放[cite:9][cite:10] | **自举编译器可直接复用官方级词法与语法分析**，无需从零写 parser；先例：cjbind 即基于此模式构建 |
+| **`std.ast` 语法解析库** | 提供 `cangjieLex(String)`（字符串→Tokens）、`parseProgram`、`parseDecl`、`parseExpr`、`parseType`、`parsePattern` 及 Fragment 系列函数，AST 节点类体系完整开放（本地核验：`cangjieLex` 在 [ffi.cj:187](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/ffi.cj)、`parseProgram` 在 [parse_node.cj:99](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/parse_node.cj)、`parseDecl` 在 [parse_decl.cj:13](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/parse_decl.cj)）[cite:9][cite:10] | **自举编译器可直接复用官方级词法与语法分析**，无需从零写 parser；先例：cjbind 即基于此模式构建。**本地核验修正**：`cangjieLex` 底层经 FFI 调用官方 C++ 编译器的 lexer/parser（`CJ_AST_Lex`，见 [ffi.cj:196-207](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/ffi.cj)），即 `std.ast` 是官方解析器的仓颉 FFI 包装而非纯仓颉实现 |
 | **宏（元编程）** | 宏以仓颉编写、编译为动态库、在编译期执行，输入输出均为 Tokens；支持 `quote` 插值与上下文通信[cite:9][cite:10] | 证明"仓颉程序在编译期运行并操纵语法树"这一机制已被官方工具链原生支持 |
 | **泛型/模式匹配/并发/异常** | 语言核心特性（LTS 1.0.0 起）[cite:7] | 提供编写大型系统程序（编译器）所需的表达力 |
-| **运行时开源** | 全并发 GC、M:N 线程调度等运行时源码开放，标准库 26 个模块以 `.cj` 源码形式提供[cite:5][cite:14] | 自研编译器产出的目标码可直接链接官方运行时，无需重写 GC |
+| **运行时开源** | 全并发 GC、M:N 线程调度等运行时源码开放，标准库 30 个包（core、collection、io、net、reflect、ast、unittest 等，仓库共 495 个 `.cj` 文件）全部以 `.cj` 源码形式提供（本地核验：[stdlib/libs/std](file:///workspace/repos/cangjie_runtime/stdlib/libs/std)）[cite:5][cite:14] | 自研编译器产出的目标码可直接链接官方运行时，无需重写 GC |
 
 ### 2.3 生态中已有自举先例
 
-- **cjpm（包管理器）**：以仓颉语言实现，仓库自带 `cjpm.toml`，可直接用 SDK 中的 cjpm 编译自身——文档明确称之为"自举"[cite:8]。
+- **cjpm（包管理器）**：以仓颉语言实现，仓库自带 `cjpm.toml`（本地核验：[cjpm/cjpm.toml](file:///workspace/repos/cangjie_tools/cjpm)、[src/main.cj](file:///workspace/repos/cangjie_tools/cjpm/src/main.cj)，共 96 个 `.cj` 文件）[cite:8]。**本地核验修正**：官方构建脚本 [cjpm/build/build.py:168-182](file:///workspace/repos/cangjie_tools/cjpm/build/build.py) 实际是调用 `cjc` 逐模块编译 cjpm 自身源码再链接为可执行文件，仓库内并未出现"自举"字样；另外 cjpm 的文件监视等能力经 FFI 链接 C++ 库（fswatcher、libuv，见 `cjpm.toml` 中 `-l fswatcher -l uv` 链接项）——"仓颉主体 + FFI 复用 C++ 组件"是官方工具的既定实践。
 - **cjcov、cjtrace-recover、hle** 等工具同样以仓颉实现并自我构建[cite:8]。
 - **cjbind**（社区 FFI 绑定生成器）：以仓颉编写，通过 FFI 调用 libclang 解析 C 头文件；其对 libclang 的绑定 `libclang.cj` 就是cjbind 自己生成的，实现"生成器自举"[cite:13]。
 - **标准库本身**以 `.cj` 源码交付，由 `cjc` 编译[cite:14]——即**库层已经处于"用仓颉写、被仓颉编译"的自举状态**，缺的只是编译器本体。
@@ -118,7 +120,7 @@ LLVM FAQ 针对"用语言自身编写自举编译器"给出三种对接方式[ci
 
 **目标**：仓颉写就的完整"源码 → AST"能力。
 
-- 优先方案：封装 `std.ast`（`cangjieLex` + `parseProgram`）获得官方级解析器[cite:9][cite:10]；
+- 优先方案：封装 `std.ast`（`cangjieLex` + `parseProgram`）获得官方级解析器[cite:9][cite:10]。**注意（本地核验）**：`std.ast` 本质是对官方 C++ lexer/parser 的 FFI 包装（`CJ_AST_Lex` 调用见 [ffi.cj:196](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/ffi.cj)），且仅在宏/编译期上下文中由编译器宿主提供——借它起步意味着解析环节仍借用官方能力，属于**过渡手段**，最终自举 parser 必须以纯仓颉实现（与备选方案合流）；
 - 在其上构建自研 AST 模型、符号表、诊断系统（错误信息格式与 cjc 对齐）；
 - 备选：为摆脱对官方运行库的依赖、锻炼队伍，可自研手写 lexer/parser，以 `cangjie_test` 用例做交叉验证。
 
@@ -196,6 +198,64 @@ LLVM FAQ 针对"用语言自身编写自举编译器"给出三种对接方式[ci
 
 ---
 
+## 五、第一手源码核验（本地克隆）
+
+> 本报告初版基于公开网络资料撰写。为消除二手信息误差，已将官方四仓浅克隆至本地（`/workspace/repos/`）逐条核验：[cangjie_compiler](file:///workspace/repos/cangjie_compiler)（32MB）、[cangjie_runtime](file:///workspace/repos/cangjie_runtime)（30MB）、[cangjie_tools](file:///workspace/repos/cangjie_tools)（48MB）、[llvm-project](file:///workspace/repos/llvm-project)（部分克隆：Transforms/Passes/CodeGen 等目录）。**总体结论：自举可行性的核心论断全部被第一手源码证实，其中两处表述被修正、若干重要事实系本地核验新发现。**
+
+### 5.1 逐项核验结果
+
+**论断 1：cangjie_compiler 是 C++ 前端，目录结构可考 —— 证实（有补充）**
+
+- `src/` 实际含 18 个子目录：除二手资料列出的 Lex/Parse/Sema/Macro/Mangle/Modules/ConditionalCompilation/CHIR/CodeGen/Driver 外，还有 `AST`、`Basic`、`Frontend`、`FrontendTool`、`IncrementalCompilation`、`Option`、`Utils`（见 [src/](file:///workspace/repos/cangjie_compiler/src)）。
+- 前端还包含三个独立入口：[main.cpp](file:///workspace/repos/cangjie_compiler/src/main.cpp)（Driver 模式）、[main-frontend.cpp](file:///workspace/repos/cangjie_compiler/src/main-frontend.cpp)（纯前端）、[main-macrosrv.cpp](file:///workspace/repos/cangjie_compiler/src/main-macrosrv.cpp)（宏服务）、main-chir-dis.cpp（CHIR 反汇编）。
+- [schema/](file:///workspace/repos/cangjie_compiler/schema) 下有 5 个 FlatBuffers schema：`CjoFormat.fbs`（.cjo 包格式）、`CachedASTFormat.fbs`、`MacroMsgFormat.fbs`（宏消息）、`StdAstFormat.fbs`（std.ast 序列化）、`StdxChirFormat.fbs`。
+- 官方 [README.md](file:///workspace/repos/cangjie_compiler/README.md) 自述："consists of two main parts: the compiler frontend and modified open-source LLVM components. The latter includes the LLVM backend, opt optimizer, llc, ld linker, and debugger."——与报告 2.1 节论断一致。
+- 体量数据：Sema 231 个 .cpp（全仓最大，印证"语义分析是最大难点"）；`src/` 合计 796 个 .cpp/.h。
+
+**论断 2：Driver 调外部 opt/llc，链接用 ld.lld；CHIR 优化在前端内 —— 证实**
+
+- [CJNATIVEBackend.cpp:83-90](file:///workspace/repos/cangjie_compiler/src/Driver/Backend/CJNATIVEBackend.cpp) 在 `CANGJIE_HOME` 的 bin 下查找外部 `opt`/`llc` 可执行文件，找不到即报错退出；`:280,327` 注释明确"opt/llc 每次只能处理一个文件，对每个 bitCodeFile 生成一条命令"。
+- 链接器为 SDK 自带 `ld.lld`（[Ohos_CJNATIVE.cpp:66](file:///workspace/repos/cangjie_compiler/src/Driver/Toolchains/CJNATIVE/Ohos_CJNATIVE.cpp)），LTO 走 lld 选项（Linux_CJNATIVE.cpp:151），静态库用 `llvm-ar`（MinGW_CJNATIVE.cpp:96）。
+- [main.cpp:77](file:///workspace/repos/cangjie_compiler/src/main.cpp)：以 `cjc-frontend` 名字执行时进入 Frontend 模式（仅前端到 LLVM IR）；[Driver.cpp:77](file:///workspace/repos/cangjie_compiler/src/Driver/Driver.cpp) 中 Driver 拼接 `cjc-frontend` 路径——前端/后端进程切分与报告 3.2 节描述完全一致。
+- CHIR 中端优化在前端 C++ 内：[CHIR/Optimization/](file:///workspace/repos/cangjie_compiler/src/CHIR/Optimization) 含 `FunctionInline.cpp`（内联）、`DeadCodeElimination.cpp`（DCE）、`Devirtualization.cpp`、`ConstPropagation.cpp` 等 17 个文件；[CHIR/Interpreter/](file:///workspace/repos/cangjie_compiler/src/CHIR/Interpreter) 含 `BCHIRInterpreter.cpp` 等（解释器，供 CHIR 级执行/调试）。
+
+**论断 3：仓颉专属 LLVM Pass 位于 llvm-project fork —— 证实（比二手资料更丰富）**
+
+- 文件级证据：`llvm/lib/Transforms/Scalar/` 下有 `CJRewriteStatepoint.cpp`、`CJBarrierOpt.cpp`、`CJBarrierSplit.cpp`、`CJFillMetadata.cpp`、`CJRuntimeLowering.cpp`、`CJDevirtualOpt.cpp`、`CJGCInstrReplace.cpp`、`CJGCInstrRestore.cpp`、`CJGCLiveAnalysis.cpp`；`llvm/lib/Transforms/IPO/CJPartialEscapeAnalysis.cpp`；`llvm/lib/CodeGen/CJBarrierLowering.cpp`。
+- 注册级证据：[PassBuilder.cpp:1250-1291](file:///workspace/repos/llvm-project/llvm/lib/Passes/PassBuilder.cpp) 在 `CJPipeline`（仓颉专属管线）中挂载 `CJFillMetadata` → `CJRuntimeLowering` → `CJBarrierSplit` → `CJBarrierOpt` → `CJRewriteStatepoint` 等，意味着 `opt` 工具可直接执行全部仓颉 lowering——自研编译器只需产出合规 IR 即可免费获得官方 GC/运行时支持。
+- 二手资料未提到的额外发现：管线中还有 `CJIRVerifier`（前端 IR 校验器）、`CJAllocationSizeCheck`、`CJStringPoolMerge`（字符串池合并）、`CJExceptionTailOutline`、`InsertCJTBAA`、`CJSimpleOpt`、`CJSpecificOpt` 等；LLDB 含完整的 Cangjie 表达式解析插件（`lldb/source/Plugins/ExpressionParser/Cangjie/`，约 20 个文件）；compiler-rt 的 TSan 有 cangjie 适配（`compiler-rt/lib/tsan/cangjie/`）。
+
+**论断 4：标准库以 .cj 源码交付且含 std.ast —— 证实（数量修正）**
+
+- [stdlib/libs/std](file:///workspace/repos/cangjie_runtime/stdlib/libs/std) 下实数 **30 个包**（初版引用二手资料写"26 个模块"，已修正）：argopt、ast、binary、collection、concurrent、console、convert、core、crypto、database、deriving、env、fs、interop、io、math、net、objectpool、overflow、posix、process、random、ref、reflect、regex、runtime、sort、sync、time、unicode、unittest。
+- 仓库共 495 个 `.cj` 文件；标准库全部以源码交付，"库层已被 cjc 编译"的状态属实。
+- `std/ast` 包的公开接口与文档一致：`cangjieLex`（[ffi.cj:187](file:///workspace/repos/cangjie_runtime/stdlib/libs/std/ast/ffi.cj)）、`parseDecl`（parse_decl.cj:13）、`parseExpr`（parse_expr.cj:13）、`parseProgram`（parse_node.cj:99）。
+
+**论断 5：cjpm 以仓颉实现并可自举 —— 主体证实，"自举"表述修正**
+
+- 证实：`cangjie_tools/cjpm/` 确为仓颉工程——`cjpm.toml`（package name = cjpm）、[src/main.cj](file:///workspace/repos/cangjie_tools/cjpm/src/main.cj)（`package cjpm`、`main(): Int64`），共 96 个 `.cj` 文件。
+- 修正：官方 [build/build.py:168-182](file:///workspace/repos/cangjie_tools/cjpm/build/build.py) 用 `cjc` 逐模块编译 cjpm 再链接，仓库文档未出现"自举"字样（初版所引"文档明确称之为自举"来自二手博客，不严谨）。不过 `cjpm.toml` 本身就是 cjpm 工程描述，具备用 cjpm 构建自身的形式条件。
+- 新发现：cjpm 经 FFI 链接 C++ 库 fswatcher/libuv（文件监视），证明"仓颉写主体 + FFI 复用成熟 C++ 组件"是官方团队的常规工程模式——对自举编译器的直接启示：**不必回避 FFI 混合实现，与 rustc（Rust 主体 + C++/Rust 的 LLVM）同构**。
+
+### 5.2 核验对自举计划的影响
+
+| 事项 | 影响 | 处置 |
+|------|------|------|
+| 后端切分被证实（cjc-frontend→.bc→opt→llc→ld.lld） | 正面：Phase 4 的"自研前端产 IR + 官方后端"路线有官方同构先例，`cjc --output-type` 系选项可直接对照 | 维持原计划 |
+| CJ Pass 全部经 PassBuilder 注册进 opt | 正面：GC 安全点、写屏障、运行时 lowering、反射元数据均无需自研 | 维持原计划 |
+| `std.ast` 实为官方 parser 的 FFI 包装 | 修正：Phase 1"复用 std.ast"只能作为过渡；纯仓颉 parser 是自举的必要条件，权重应向备选方案（自研 lexer/parser）倾斜 | Phase 1 已修订 |
+| cjpm 构建"自举"说法不严谨 | 修正：生态先例的证据强度略降，但 cjbind 的"生成器自举"与标准库"源码级自举"仍然成立 | 2.3 节已修订 |
+| cjpm 的 FFI 混合实现模式 | 新增正面证据：自举编译器采用"仓颉主体 + FFI 调 LLVM-C"完全符合官方工程惯例 | 强化 3.1 路径 1 的可行性 |
+| CHIR 解释器位于前端（BCHIRInterpreter） | 正面：Phase 2"树遍历解释器"有官方参考实现可对照 | 维持原计划 |
+
+### 5.3 尚未核验的引用（诚实声明）
+
+- `cangjie_test` / `cangjie_test_framework` 两个测试仓（报告引用 [5]）未克隆核验，测试基线论断仍基于官方文档；
+- cjbind 仓库属社区项目（非官方 cangjie_tools 内），未克隆核验，"生成器自举"说法仍基于其官方文档[cite:13]；
+- 各仓库为浅克隆（`--depth 1`），未核验历史演进与三阶段构建脚本（如 build.py 中的 bootstrap 链）。
+
+---
+
 ## Sources
 
 - [1] [仓颉编译器开源仓库深度指南：系统架构、目录结构与源码构建实战 - GitCode 博客](https://blog.gitcode.com/fbd8f6ce4fba0a77541d55a144011132.html)
@@ -214,3 +274,7 @@ LLVM FAQ 针对"用语言自身编写自举编译器"给出三种对接方式[ci
 - [14] [仓颉运行时与仓颉标准库源码解析 - GitCode 博客](https://blog.gitcode.com/1ea818b37e1a1475eaded52381d52a75.html)
 - [15] [仓颉编译器独立构建指导 - GitCode 博客](https://blog.gitcode.com/b026b02937b6eff45422fff4258631cc.html)
 - [16] [仓颉（Cangjie）工具链在 openEuler 上的安装与使用指南（版本通道 LTS 1.0.5 / STS 1.2.0）- 华为云社区](https://bbs.huaweicloud.com/blogs/510497)
+- [17] 本地克隆：cangjie_compiler（GitCode Cangjie 官方组织，`--depth 1`）- [file:///workspace/repos/cangjie_compiler](file:///workspace/repos/cangjie_compiler)
+- [18] 本地克隆：cangjie_runtime（GitCode Cangjie 官方组织，`--depth 1`）- [file:///workspace/repos/cangjie_runtime](file:///workspace/repos/cangjie_runtime)
+- [19] 本地克隆：cangjie_tools（GitCode Cangjie 官方组织，`--depth 1`）- [file:///workspace/repos/cangjie_tools](file:///workspace/repos/cangjie_tools)
+- [20] 本地克隆：llvm-project fork（GitCode Cangjie 官方组织，`--depth 1 --filter=blob:none` 部分克隆）- [file:///workspace/repos/llvm-project](file:///workspace/repos/llvm-project)
