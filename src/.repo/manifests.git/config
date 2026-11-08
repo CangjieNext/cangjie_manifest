@@ -1,0 +1,60 @@
+[core]
+	repositoryFormatVersion = 1
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[repo]
+	depth = 1
+	existingprojectcount = 0
+	newprojectcount = 5
+[remote "origin"]
+	url = https://github.com/CangjieNext/cangjie_manifest.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[manifest]
+	platform = auto
+[extensions]
+	preciousObjects = true
+[maintenance]
+	auto = false
+[gc]
+	auto = 0
+[branch "default"]
+	remote = origin
+	merge = refs/heads/main
+[repo "syncstate.main"]
+	synctime = 2026-11-08T10:09:21.900371+00:00
+	version = 1
+[repo "syncstate.sys"]
+	argv = ['/workspace/src/.repo/repo/main.py', '--repo-dir=/workspace/src/.repo', '--wrapper-version=2.71', '--wrapper-path=/usr/local/bin/repo', '--', 'sync', '-c', '-j4', '--no-tags', '--optimized-fetch', 'cangjie_compiler', 'cangjie_runtime', 'cangjie_tools', 'cangjie_stdx', 'cangjie_build']
+[repo "syncstate.superproject"]
+	superproject = false
+	haslocalmanifests = true
+	hassuperprojecttag = false
+[repo "syncstate.options"]
+	jobs = 4
+	outermanifest = true
+	jobsnetwork = 4
+	jobscheckout = 4
+	mpupdate = true
+	interleaved = true
+	currentbranchonly = true
+	clonebundle = true
+	tags = false
+	optimizedfetch = true
+	retryfetches = 0
+	prune = true
+	smartsync = false
+	repoverify = true
+	quiet = false
+	verbose = false
+[repo "syncstate.repo"]
+	depth = 1
+	existingprojectcount = 0
+	newprojectcount = 5
+[repo "syncstate.remote.origin"]
+	url = https://github.com/CangjieNext/cangjie_manifest.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[repo "syncstate.branch.default"]
+	remote = origin
+	merge = refs/heads/main

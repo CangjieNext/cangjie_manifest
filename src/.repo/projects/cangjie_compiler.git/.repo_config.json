@@ -1,0 +1,32 @@
+{
+  "core.repositoryformatversion": [
+    "0"
+  ],
+  "core.filemode": [
+    "true"
+  ],
+  "filter.lfs.smudge": [
+    "git-lfs smudge --skip -- %f"
+  ],
+  "filter.lfs.process": [
+    "git-lfs filter-process --skip"
+  ],
+  "remote.origin.url": [
+    "https://github.com/CangjieNext/cangjie_compiler"
+  ],
+  "remote.origin.review": [
+    "https://github.com/CangjieNext/"
+  ],
+  "remote.origin.projectname": [
+    "cangjie_compiler"
+  ],
+  "remote.origin.fetch": [
+    "+refs/heads/*:refs/remotes/origin/*"
+  ],
+  "maintenance.auto": [
+    "false"
+  ],
+  "gc.auto": [
+    "0"
+  ]
+}
