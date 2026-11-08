@@ -1,0 +1,11 @@
+cangjie_build
+cangjie_compiler
+cangjie_docs
+cangjie_js_interop
+cangjie_multiplatform_interop
+cangjie_python_interop
+cangjie_runtime
+cangjie_stdx
+cangjie_test
+cangjie_test_framework
+cangjie_tools

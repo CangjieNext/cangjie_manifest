@@ -1,0 +1,58 @@
+[core]
+	repositoryFormatVersion = 1
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[repo]
+	depth = 1
+	existingprojectcount = 0
+	newprojectcount = 1
+[remote "origin"]
+	url = https://github.com/CangjieNext/cangjie_manifest.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[manifest]
+	platform = auto
+[extensions]
+	preciousObjects = true
+[maintenance]
+	auto = false
+[gc]
+	auto = 0
+[branch "default"]
+	remote = origin
+	merge = refs/heads/main
+[repo "syncstate.main"]
+	synctime = 2026-11-08T09:51:27.997909+00:00
+	version = 1
+[repo "syncstate.sys"]
+	argv = ['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_compiler']
+[repo "syncstate.superproject"]
+	superproject = false
+	haslocalmanifests = true
+	hassuperprojecttag = false
+[repo "syncstate.options"]
+	jobs = 4
+	outermanifest = true
+	jobsnetwork = 4
+	jobscheckout = 4
+	mpupdate = true
+	interleaved = true
+	currentbranchonly = true
+	clonebundle = true
+	retryfetches = 0
+	prune = true
+	smartsync = false
+	repoverify = true
+	quiet = false
+	verbose = false
+[repo "syncstate.repo"]
+	depth = 1
+	existingprojectcount = 0
+	newprojectcount = 1
+[repo "syncstate.remote.origin"]
+	url = https://github.com/CangjieNext/cangjie_manifest.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[repo "syncstate.branch.default"]
+	remote = origin
+	merge = refs/heads/main

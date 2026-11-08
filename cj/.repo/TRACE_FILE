@@ -1,0 +1,950 @@
+PID: 1958 START: 1794131468952968448 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -u, https://github.com/CangjieNext/cangjie_manifest.git, -b, main, --depth, 1, --repo-url, https://github.com/GerritCodeReview/git-repo [sid=repo-20261108T095105Z-P000007a6/repo-20261108T095108Z-P000007a6]
+
+PID: 1958 START: 1794131468956112896 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 1958 END: 1794131468958852608 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 1958 START: 1794131468977651200 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/repo/.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/repo/.git/config --includes --null --list 1>| 2>|
+
+PID: 1958 END: 1794131468982243328 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/repo/.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/repo/.git/config --includes --null --list 1>| 2>|
+
+PID: 1958 START: 1794131468983052288 :git command None ['git', 'config', '--file', '/root/.gitconfig', '--includes', '--null', '--list'] with debug: : git config --file /root/.gitconfig --includes --null --list 1>| 2>|
+
+PID: 1958 END: 1794131468986878976 :git command None ['git', 'config', '--file', '/root/.gitconfig', '--includes', '--null', '--list'] with debug: : git config --file /root/.gitconfig --includes --null --list 1>| 2>|
+
+PID: 1958 START: 1794131468987819776 :git command /workspace/cj/.repo/manifests.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git init 1>| 2>|
+
+PID: 1958 END: 1794131468993382656 :git command /workspace/cj/.repo/manifests.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git init 1>| 2>|
+
+PID: 1958 START: 1794131468994710528 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 1958 END: 1794131468998635264 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 1958 START: 1794131468999403776 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 1958 END: 1794131469008279040 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 1958 START: 1794131469008667136 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 1958 END: 1794131469012851200 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 1958 START: 1794131469013273344 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 1958 END: 1794131469017098752 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 1958 START: 1794131469017893376 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.depth', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.depth 1 1>| 2>|
+
+PID: 1958 END: 1794131469021939968 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.depth', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.depth 1 1>| 2>|
+
+PID: 1958 START: 1794131469022388224 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_manifest.git'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_manifest.git 1>| 2>|
+
+PID: 1958 END: 1794131469026412800 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_manifest.git'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_manifest.git 1>| 2>|
+
+PID: 1958 START: 1794131469026944000 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 1958 END: 1794131469030988032 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 1958 START: 1794131469031524096 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'manifest.platform', 'auto'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all manifest.platform auto 1>| 2>|
+
+PID: 1958 END: 1794131469035415296 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'manifest.platform', 'auto'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all manifest.platform auto 1>| 2>|
+
+PID: 1958 START: 1794131469036068608 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'core.repositoryFormatVersion', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all core.repositoryFormatVersion 1 1>| 2>|
+
+PID: 1958 END: 1794131469038822656 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'core.repositoryFormatVersion', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all core.repositoryFormatVersion 1 1>| 2>|
+
+PID: 1958 START: 1794131469039119872 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'extensions.preciousObjects', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all extensions.preciousObjects true 1>| 2>|
+
+PID: 1958 END: 1794131469041821952 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'extensions.preciousObjects', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all extensions.preciousObjects true 1>| 2>|
+
+PID: 1958 START: 1794131469042212096 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 1958 END: 1794131469045079040 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 1958 START: 1794131469045382144 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 1958 END: 1794131469048112128 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 1958 START: 1794131469048492544 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 1958 END: 1794131470221661184 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 1958 START: 1794131470222102784 :git command /workspace/cj/.repo/manifests.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 1958 END: 1794131470225539584 :git command /workspace/cj/.repo/manifests.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 1958 START: 1794131470226243584 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 1958 END: 1794131470229187584 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 1958 START: 1794131470229462784 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', '--no-deref', 'HEAD', '6e801ef73400aa2e01687164af2deb4157bea5e3'] with debug: 
+: cd /workspace/cj/.repo/manifests
+: git update-ref --no-deref HEAD 6e801ef73400aa2e01687164af2deb4157bea5e3 1>| 2>|
+
+PID: 1958 END: 1794131470232345856 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', '--no-deref', 'HEAD', '6e801ef73400aa2e01687164af2deb4157bea5e3'] with debug: 
+: cd /workspace/cj/.repo/manifests
+: git update-ref --no-deref HEAD 6e801ef73400aa2e01687164af2deb4157bea5e3 1>| 2>|
+
+PID: 1958 START: 1794131470232645632 :git command /workspace/cj/.repo/manifests.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 1958 END: 1794131470235938304 :git command /workspace/cj/.repo/manifests.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 1958 START: 1794131470236099328 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470236327424 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 END: 1794131470238876160 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 START: 1794131470239105280 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470241742336 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 START: 1794131470242016256 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 1958 END: 1794131470244464896 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 1958 START: 1794131470244730880 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470247267840 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470247463424 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470247531008 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470247584256 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470247888128 :git command /workspace/cj/.repo/manifests.git ['git', 'checkout', '-q', '6e801ef73400aa2e01687164af2deb4157bea5e3', '--'] with debug: : git checkout -q 6e801ef73400aa2e01687164af2deb4157bea5e3 -- 2>|
+
+PID: 1958 END: 1794131470250999296 :git command /workspace/cj/.repo/manifests.git ['git', 'checkout', '-q', '6e801ef73400aa2e01687164af2deb4157bea5e3', '--'] with debug: : git checkout -q 6e801ef73400aa2e01687164af2deb4157bea5e3 -- 2>|
+
+PID: 1958 START: 1794131470251294208 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', '-d', 'refs/heads/default'] with debug: : git update-ref -d refs/heads/default 1>| 2>|
+
+PID: 1958 END: 1794131470253891584 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', '-d', 'refs/heads/default'] with debug: : git update-ref -d refs/heads/default 1>| 2>|
+
+PID: 1958 START: 1794131470254114560 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470254216448 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470254268928 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470254500864 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 END: 1794131470257190400 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 START: 1794131470257415680 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470259946240 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 START: 1794131470260211712 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470262757120 :git command /workspace/cj/.repo/manifests.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470263036160 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470263124480 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470263211008 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470263426560 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470263514368 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470263959040 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', 'refs/heads/default', '6e801ef73400aa2e01687164af2deb4157bea5e3'] with debug: : git update-ref refs/heads/default 6e801ef73400aa2e01687164af2deb4157bea5e3 1>| 2>|
+
+PID: 1958 END: 1794131470266825984 :git command /workspace/cj/.repo/manifests.git ['git', 'update-ref', 'refs/heads/default', '6e801ef73400aa2e01687164af2deb4157bea5e3'] with debug: : git update-ref refs/heads/default 6e801ef73400aa2e01687164af2deb4157bea5e3 1>| 2>|
+
+PID: 1958 START: 1794131470267082496 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', 'HEAD', 'refs/heads/default'] with debug: : git symbolic-ref HEAD refs/heads/default 1>| 2>|
+
+PID: 1958 END: 1794131470269771264 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', 'HEAD', 'refs/heads/default'] with debug: : git symbolic-ref HEAD refs/heads/default 1>| 2>|
+
+PID: 1958 START: 1794131470270010112 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470270074880 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470270119936 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 START: 1794131470270332160 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 END: 1794131470272999424 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 1958 START: 1794131470273220864 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470275780864 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 1958 END: 1794131470275978496 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 1958 END: 1794131470280692224 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -u, https://github.com/CangjieNext/cangjie_manifest.git, -b, main, --depth, 1, --repo-url, https://github.com/GerritCodeReview/git-repo [sid=repo-20261108T095105Z-P000007a6/repo-20261108T095108Z-P000007a6]
+
+PID: 2108 START: 1794131474226679040 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, --depth, 1, cangjie_runtime, cangjie_stdx [sid=repo-20261108T095114Z-P0000083c/repo-20261108T095114Z-P0000083c]
+
+PID: 2108 START: 1794131474229689088 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2108 END: 1794131474232350208 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2108 START: 1794131474232803840 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 2108 END: 1794131474235387904 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 2108 START: 1794131474235636992 :: parsing /root/.gitconfig
+
+PID: 2108 END: 1794131474235739648 :: parsing /root/.gitconfig
+
+PID: 2108 END: 1794131474236803584 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, --depth, 1, cangjie_runtime, cangjie_stdx [sid=repo-20261108T095114Z-P0000083c/repo-20261108T095114Z-P0000083c]
+
+PID: 2194 START: 1794131476650812160 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, cangjie_runtime, cangjie_stdx [sid=repo-20261108T095116Z-P00000892/repo-20261108T095116Z-P00000892]
+
+PID: 2194 START: 1794131476653760512 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2194 END: 1794131476656968192 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2194 START: 1794131476657201664 :: parsing /workspace/cj/.repo/manifests.git/config
+
+PID: 2194 END: 1794131476657335040 :: parsing /workspace/cj/.repo/manifests.git/config
+
+PID: 2194 START: 1794131476657420032 :: parsing /root/.gitconfig
+
+PID: 2194 END: 1794131476657515520 :: parsing /root/.gitconfig
+
+PID: 2194 START: 1794131476672067072 :: parsing /workspace/cj/.repo/repo/.git/config
+
+PID: 2194 END: 1794131476672176640 :: parsing /workspace/cj/.repo/repo/.git/config
+
+PID: 2194 START: 1794131476673691392 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2194 END: 1794131477784667648 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2194 START: 1794131477784909824 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477785224192 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 END: 1794131477788141312 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 START: 1794131477788395776 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131477791180800 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131477791402496 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477791614464 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-m', 'manifest set to refs/heads/main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to refs/heads/main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2194 END: 1794131477794542080 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-m', 'manifest set to refs/heads/main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to refs/heads/main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2194 START: 1794131477794693376 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 END: 1794131477794844672 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477794880256 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477795055360 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 END: 1794131477797772288 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 START: 1794131477798006016 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131477800604672 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131477800861440 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477800926208 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 END: 1794131477800986880 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477801022208 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 END: 1794131477801075968 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131477801455104 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.existingprojectcount', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.existingprojectcount 0 1>| 2>|
+
+PID: 2194 END: 1794131477804301568 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.existingprojectcount', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.existingprojectcount 0 1>| 2>|
+
+PID: 2194 START: 1794131477804577024 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.newprojectcount', '2'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.newprojectcount 2 1>| 2>|
+
+PID: 2194 END: 1794131477807221504 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.newprojectcount', '2'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.newprojectcount 2 1>| 2>|
+
+PID: 2313 START: 1794131478097496832 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_runtime.git
+: git init 1>| 2>|
+
+PID: 2314 START: 1794131478102215936 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_stdx.git
+: git init 1>| 2>|
+
+PID: 2313 END: 1794131478102864640 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_runtime.git
+: git init 1>| 2>|
+
+PID: 2314 END: 1794131478108053760 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'init'] with debug: : export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_stdx.git
+: git init 1>| 2>|
+
+PID: 2313 START: 1794131478109318400 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --null --list 1>| 2>|
+
+PID: 2313 END: 1794131478112930304 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --null --list 1>| 2>|
+
+PID: 2314 START: 1794131478113170944 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --null --list 1>| 2>|
+
+PID: 2313 START: 1794131478113521152 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2313 END: 1794131478117345024 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2313 START: 1794131478117745920 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2314 END: 1794131478118529792 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --null --list 1>| 2>|
+
+PID: 2314 START: 1794131478119151104 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2313 END: 1794131478121437184 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2313 START: 1794131478121886208 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2314 END: 1794131478123237632 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2314 START: 1794131478123644160 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2313 END: 1794131478125490176 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-bnq26txu/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2313 START: 1794131478126380544 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --null --list 1>| 2>|
+
+PID: 2314 END: 1794131478128410624 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2314 START: 1794131478128819456 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2313 END: 1794131478129929728 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --null --list 1>| 2>|
+
+PID: 2313 START: 1794131478130529280 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_runtime'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_runtime 1>| 2>|
+
+PID: 2314 END: 1794131478132645632 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7lu1v1br/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2314 START: 1794131478133492224 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --null --list 1>| 2>|
+
+PID: 2313 END: 1794131478134102528 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_runtime'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_runtime 1>| 2>|
+
+PID: 2313 START: 1794131478134493696 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2314 END: 1794131478137844224 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --null --list 1>| 2>|
+
+PID: 2313 END: 1794131478138053888 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2313 START: 1794131478138414592 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_runtime'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.projectname cangjie_runtime 1>| 2>|
+
+PID: 2314 START: 1794131478138436864 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_stdx'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_stdx 1>| 2>|
+
+PID: 2313 END: 1794131478142444544 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_runtime'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.projectname cangjie_runtime 1>| 2>|
+
+PID: 2313 START: 1794131478142900224 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2314 END: 1794131478143619072 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_stdx'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_stdx 1>| 2>|
+
+PID: 2314 START: 1794131478144040192 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2313 END: 1794131478146554880 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2313 START: 1794131478146970880 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2314 END: 1794131478147876352 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2314 START: 1794131478148238336 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_stdx'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.projectname cangjie_stdx 1>| 2>|
+
+PID: 2313 END: 1794131478150861568 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2313 START: 1794131478151244544 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2314 END: 1794131478152081152 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_stdx'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.projectname cangjie_stdx 1>| 2>|
+
+PID: 2314 START: 1794131478152471296 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2313 END: 1794131478156245248 :git command /workspace/cj/.repo/project-objects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2314 END: 1794131478156371200 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2313 START: 1794131478156626176 :: parsing /root/.gitconfig
+
+PID: 2314 START: 1794131478156795648 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2313 END: 1794131478156822784 :: parsing /root/.gitconfig
+
+PID: 2313 START: 1794131478157377536 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_runtime.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_runtime.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2314 END: 1794131478163526912 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2314 START: 1794131478163984896 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2314 END: 1794131478168914944 :git command /workspace/cj/.repo/project-objects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2314 START: 1794131478169226496 :: parsing /root/.gitconfig
+
+PID: 2314 END: 1794131478169347072 :: parsing /root/.gitconfig
+
+PID: 2314 START: 1794131478169801216 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_stdx.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_stdx.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2314 END: 1794131480002656000 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_stdx.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_stdx.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2314 START: 1794131480003041792 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2314 END: 1794131480006374144 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2314 START: 1794131480006578944 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 START: 1794131480006920448 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2314 END: 1794131480009624576 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2314 START: 1794131480010008064 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2314 END: 1794131480012889856 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2314 END: 1794131480013200640 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 START: 1794131480013527552 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2314 END: 1794131480016473088 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2314 START: 1794131480017487872 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2314 END: 1794131480026489600 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2314 START: 1794131480026794496 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'update-ref', '--no-deref', 'HEAD', '49d2f1eef846820ebe18b6b9d1e078ac3c2c3ed4'] with debug: 
+: cd /workspace/cj/cangjie_stdx
+: git update-ref --no-deref HEAD 49d2f1eef846820ebe18b6b9d1e078ac3c2c3ed4 1>| 2>|
+
+PID: 2314 END: 1794131480029700352 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'update-ref', '--no-deref', 'HEAD', '49d2f1eef846820ebe18b6b9d1e078ac3c2c3ed4'] with debug: 
+: cd /workspace/cj/cangjie_stdx
+: git update-ref --no-deref HEAD 49d2f1eef846820ebe18b6b9d1e078ac3c2c3ed4 1>| 2>|
+
+PID: 2314 START: 1794131480030006272 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2314 END: 1794131480120288256 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2314 START: 1794131480120507904 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 END: 1794131480120559104 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 START: 1794131480120588032 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 START: 1794131480120869120 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2314 END: 1794131480124080128 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2314 START: 1794131480124341504 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2314 END: 1794131480127193600 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2314 START: 1794131480127487488 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2314 END: 1794131480130356480 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2314 START: 1794131480130599680 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2314 END: 1794131480133207040 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2314 END: 1794131480133419008 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 START: 1794131480133508608 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2314 END: 1794131480133574912 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2194 START: 1794131480140162560 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2194 START: 1794131480140439552 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_stdx.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 END: 1794131480143113216 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_stdx.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 START: 1794131480143399680 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480145999104 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 START: 1794131480146258944 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2194 END: 1794131480148737792 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2194 START: 1794131480149017088 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480151503872 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480151738624 :: load refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2194 START: 1794131480152013568 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --null --list 1>| 2>|
+
+PID: 2194 END: 1794131480154484224 :git command /workspace/cj/.repo/projects/cangjie_stdx.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_stdx.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_stdx.git/config --includes --null --list 1>| 2>|
+
+PID: 2194 START: 1794131480154907136 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2194 END: 1794131480155031808 :: scan refs /workspace/cj/.repo/projects/cangjie_stdx.git
+
+PID: 2313 END: 1794131480678294528 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_runtime.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_runtime.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2313 START: 1794131480678667008 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2313 END: 1794131480681930496 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2313 START: 1794131480682121472 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 START: 1794131480682392320 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2313 END: 1794131480685146112 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2313 START: 1794131480685392896 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2313 END: 1794131480688086784 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2313 END: 1794131480688403968 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 START: 1794131480688671744 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2313 END: 1794131480691524352 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2313 START: 1794131480692299776 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2313 END: 1794131480701630208 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2313 START: 1794131480701980928 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'update-ref', '--no-deref', 'HEAD', 'e927f242bf6eca49b5ce0a4a15557f9e2aee0542'] with debug: 
+: cd /workspace/cj/cangjie_runtime
+: git update-ref --no-deref HEAD e927f242bf6eca49b5ce0a4a15557f9e2aee0542 1>| 2>|
+
+PID: 2313 END: 1794131480704956160 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'update-ref', '--no-deref', 'HEAD', 'e927f242bf6eca49b5ce0a4a15557f9e2aee0542'] with debug: 
+: cd /workspace/cj/cangjie_runtime
+: git update-ref --no-deref HEAD e927f242bf6eca49b5ce0a4a15557f9e2aee0542 1>| 2>|
+
+PID: 2313 START: 1794131480705203712 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2313 END: 1794131480912328960 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2313 START: 1794131480912593920 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 END: 1794131480912680960 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 START: 1794131480912750336 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 START: 1794131480913026816 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2313 END: 1794131480916069888 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2313 START: 1794131480916315136 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2313 END: 1794131480919055616 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2313 START: 1794131480919343360 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2313 END: 1794131480921978112 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2313 START: 1794131480922207488 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2313 END: 1794131480925340928 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2313 END: 1794131480925651712 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 START: 1794131480925797120 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2313 END: 1794131480925904640 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2194 START: 1794131480928209664 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2194 START: 1794131480928593920 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_runtime.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 END: 1794131480932045824 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_runtime.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 START: 1794131480932381696 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480934907392 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 START: 1794131480935178752 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480937768192 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480938107904 :: load refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2194 START: 1794131480938422272 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --null --list 1>| 2>|
+
+PID: 2194 END: 1794131480941090816 :git command /workspace/cj/.repo/projects/cangjie_runtime.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_runtime.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_runtime.git/config --includes --null --list 1>| 2>|
+
+PID: 2194 START: 1794131480941361664 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2194 END: 1794131480941430272 :: scan refs /workspace/cj/.repo/projects/cangjie_runtime.git
+
+PID: 2194 START: 1794131480945012480 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 END: 1794131480945167872 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131480945213440 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131480945505280 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 END: 1794131480949223936 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2194 START: 1794131480949572096 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480953101056 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2194 END: 1794131480953346816 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2194 START: 1794131480960196864 :: parsing /workspace/cj/.repo/projects/cangjie_runtime.git/config
+
+PID: 2194 END: 1794131480960322560 :: parsing /workspace/cj/.repo/projects/cangjie_runtime.git/config
+
+PID: 2194 START: 1794131480960416768 :: parsing /workspace/cj/.repo/projects/cangjie_stdx.git/config
+
+PID: 2194 END: 1794131480960512256 :: parsing /workspace/cj/.repo/projects/cangjie_stdx.git/config
+
+PID: 2194 START: 1794131480960971264 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.synctime', '2026-11-08T09:51:20.960657+00:00'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.synctime 2026-11-08T09:51:20.960657+00:00 1>| 2>|
+
+PID: 2194 END: 1794131480963649280 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.synctime', '2026-11-08T09:51:20.960657+00:00'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.synctime 2026-11-08T09:51:20.960657+00:00 1>| 2>|
+
+PID: 2194 START: 1794131480964009984 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.version', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.version 1 1>| 2>|
+
+PID: 2194 END: 1794131480966630144 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.version', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.version 1 1>| 2>|
+
+PID: 2194 START: 1794131480966970624 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.sys.argv', "['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_runtime', 'cangjie_stdx']"] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.sys.argv ['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_runtime', 'cangjie_stdx'] 1>| 2>|
+
+PID: 2194 END: 1794131480969592064 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.sys.argv', "['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_runtime', 'cangjie_stdx']"] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.sys.argv ['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_runtime', 'cangjie_stdx'] 1>| 2>|
+
+PID: 2194 START: 1794131480969945344 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.superproject', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.superproject false 1>| 2>|
+
+PID: 2194 END: 1794131480973005568 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.superproject', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.superproject false 1>| 2>|
+
+PID: 2194 START: 1794131480973306112 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.haslocalmanifests', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.haslocalmanifests true 1>| 2>|
+
+PID: 2194 END: 1794131480976696320 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.haslocalmanifests', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.haslocalmanifests true 1>| 2>|
+
+PID: 2194 START: 1794131480976994304 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.hassuperprojecttag', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.hassuperprojecttag false 1>| 2>|
+
+PID: 2194 END: 1794131480982070272 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.superproject.hassuperprojecttag', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.superproject.hassuperprojecttag false 1>| 2>|
+
+PID: 2194 START: 1794131480982324224 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobs', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobs 4 1>| 2>|
+
+PID: 2194 END: 1794131480988167936 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobs', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobs 4 1>| 2>|
+
+PID: 2194 START: 1794131480988414720 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.outermanifest', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.outermanifest true 1>| 2>|
+
+PID: 2194 END: 1794131480991816448 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.outermanifest', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.outermanifest true 1>| 2>|
+
+PID: 2194 START: 1794131480992125184 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobsnetwork', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobsnetwork 4 1>| 2>|
+
+PID: 2194 END: 1794131480994794752 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobsnetwork', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobsnetwork 4 1>| 2>|
+
+PID: 2194 START: 1794131480995063296 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobscheckout', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobscheckout 4 1>| 2>|
+
+PID: 2194 END: 1794131480997704448 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.jobscheckout', '4'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.jobscheckout 4 1>| 2>|
+
+PID: 2194 START: 1794131480998007040 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.mpupdate', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.mpupdate true 1>| 2>|
+
+PID: 2194 END: 1794131481000632320 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.mpupdate', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.mpupdate true 1>| 2>|
+
+PID: 2194 START: 1794131481000946944 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.interleaved', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.interleaved true 1>| 2>|
+
+PID: 2194 END: 1794131481003571200 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.interleaved', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.interleaved true 1>| 2>|
+
+PID: 2194 START: 1794131481003895040 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.currentbranchonly', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.currentbranchonly true 1>| 2>|
+
+PID: 2194 END: 1794131481006506752 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.currentbranchonly', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.currentbranchonly true 1>| 2>|
+
+PID: 2194 START: 1794131481006854656 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.clonebundle', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.clonebundle true 1>| 2>|
+
+PID: 2194 END: 1794131481009445120 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.clonebundle', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.clonebundle true 1>| 2>|
+
+PID: 2194 START: 1794131481009772800 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.retryfetches', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.retryfetches 0 1>| 2>|
+
+PID: 2194 END: 1794131481012773888 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.retryfetches', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.retryfetches 0 1>| 2>|
+
+PID: 2194 START: 1794131481013072896 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.prune', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.prune true 1>| 2>|
+
+PID: 2194 END: 1794131481015655680 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.prune', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.prune true 1>| 2>|
+
+PID: 2194 START: 1794131481015976448 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.smartsync', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.smartsync false 1>| 2>|
+
+PID: 2194 END: 1794131481018756864 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.smartsync', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.smartsync false 1>| 2>|
+
+PID: 2194 START: 1794131481019080704 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.repoverify', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.repoverify true 1>| 2>|
+
+PID: 2194 END: 1794131481022040576 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.repoverify', 'true'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.repoverify true 1>| 2>|
+
+PID: 2194 START: 1794131481022312448 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.quiet', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.quiet false 1>| 2>|
+
+PID: 2194 END: 1794131481025589760 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.quiet', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.quiet false 1>| 2>|
+
+PID: 2194 START: 1794131481026114816 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.verbose', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.verbose false 1>| 2>|
+
+PID: 2194 END: 1794131481032205824 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.options.verbose', 'false'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.options.verbose false 1>| 2>|
+
+PID: 2194 START: 1794131481033142528 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.depth', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.depth 1 1>| 2>|
+
+PID: 2194 END: 1794131481035908864 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.depth', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.depth 1 1>| 2>|
+
+PID: 2194 START: 1794131481036177664 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.remote.origin.url', 'https://github.com/CangjieNext/cangjie_manifest.git'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.remote.origin.url https://github.com/CangjieNext/cangjie_manifest.git 1>| 2>|
+
+PID: 2194 END: 1794131481038906112 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.remote.origin.url', 'https://github.com/CangjieNext/cangjie_manifest.git'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.remote.origin.url https://github.com/CangjieNext/cangjie_manifest.git 1>| 2>|
+
+PID: 2194 START: 1794131481039175680 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2194 END: 1794131481042017280 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2194 START: 1794131481042284544 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.branch.default.remote', 'origin'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.branch.default.remote origin 1>| 2>|
+
+PID: 2194 END: 1794131481045053696 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.branch.default.remote', 'origin'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.branch.default.remote origin 1>| 2>|
+
+PID: 2194 START: 1794131481045324544 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.branch.default.merge', 'refs/heads/main'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.branch.default.merge refs/heads/main 1>| 2>|
+
+PID: 2194 END: 1794131481048008192 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.branch.default.merge', 'refs/heads/main'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.branch.default.merge refs/heads/main 1>| 2>|
+
+PID: 2194 START: 1794131481048275712 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.existingprojectcount', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.existingprojectcount 0 1>| 2>|
+
+PID: 2194 END: 1794131481050996224 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.existingprojectcount', '0'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.existingprojectcount 0 1>| 2>|
+
+PID: 2194 START: 1794131481051273728 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.newprojectcount', '2'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.newprojectcount 2 1>| 2>|
+
+PID: 2194 END: 1794131481053918208 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.newprojectcount', '2'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.newprojectcount 2 1>| 2>|
+
+PID: 2194 END: 1794131481054471680 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, cangjie_runtime, cangjie_stdx [sid=repo-20261108T095116Z-P00000892/repo-20261108T095116Z-P00000892]
+
+PID: 2445 START: 1794131483843652608 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, cangjie_compiler [sid=repo-20261108T095123Z-P0000098d/repo-20261108T095123Z-P0000098d]
+
+PID: 2445 START: 1794131483846698240 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2445 END: 1794131483849499136 :git command None ['git', 'var', 'GIT_DEFAULT_BRANCH'] with debug: : git var GIT_DEFAULT_BRANCH 1>| 2>|
+
+PID: 2445 START: 1794131483850061056 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 END: 1794131483853017856 :git command None ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 START: 1794131483853393408 :: parsing /root/.gitconfig
+
+PID: 2445 END: 1794131483853478656 :: parsing /root/.gitconfig
+
+PID: 2445 START: 1794131483868544000 :: parsing /workspace/cj/.repo/repo/.git/config
+
+PID: 2445 END: 1794131483868679168 :: parsing /workspace/cj/.repo/repo/.git/config
+
+PID: 2445 START: 1794131483870284544 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2445 END: 1794131485006266624 :git command /workspace/cj/.repo/manifests.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: : export GIT_DIR=/workspace/cj/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/manifests.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2445 START: 1794131485006434304 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131485006666496 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 END: 1794131485009669120 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 START: 1794131485010000384 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131485012876288 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131485013270016 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131485013420800 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 END: 1794131485013540352 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131485013608448 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 END: 1794131485013707520 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131485013798656 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 END: 1794131485013888768 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131485014352384 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.newprojectcount', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.newprojectcount 1 1>| 2>|
+
+PID: 2445 END: 1794131485017186816 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.newprojectcount', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.newprojectcount 1 1>| 2>|
+
+PID: 2445 START: 1794131485244824576 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'init'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_compiler.git
+: git init 1>| 2>|
+
+PID: 2445 END: 1794131485249085952 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'init'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/project-objects/cangjie_compiler.git
+: git init 1>| 2>|
+
+PID: 2445 START: 1794131485252126720 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --null --list 1>| 2>|
+
+PID: 2445 END: 1794131485254928128 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --null --list 1>| 2>|
+
+PID: 2445 START: 1794131485255291136 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2445 END: 1794131485258323712 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--replace-all', 'filter.lfs.smudge', 'git-lfs smudge --skip -- %f'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --replace-all filter.lfs.smudge git-lfs smudge --skip -- %f 1>| 2>|
+
+PID: 2445 START: 1794131485258598656 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2445 END: 1794131485261323776 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--replace-all', 'filter.lfs.process', 'git-lfs filter-process --skip'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --replace-all filter.lfs.process git-lfs filter-process --skip 1>| 2>|
+
+PID: 2445 START: 1794131485261610240 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2445 END: 1794131485264240640 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config', '--includes', '--unset-all', 'core.bare'] with debug: : git config --file /workspace/cj/.repo/projects/.tmp-project-initgitdir-7bbrz7fo/config --includes --unset-all core.bare 1>| 2>|
+
+PID: 2445 START: 1794131485265025792 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 END: 1794131485267887872 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 START: 1794131485268282112 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_compiler'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_compiler 1>| 2>|
+
+PID: 2445 END: 1794131485271048960 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.url', 'https://github.com/CangjieNext/cangjie_compiler'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.url https://github.com/CangjieNext/cangjie_compiler 1>| 2>|
+
+PID: 2445 START: 1794131485271348992 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2445 END: 1794131485274222848 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.review', 'https://github.com/CangjieNext/'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.review https://github.com/CangjieNext/ 1>| 2>|
+
+PID: 2445 START: 1794131485274552064 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_compiler'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.projectname cangjie_compiler 1>| 2>|
+
+PID: 2445 END: 1794131485277223424 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.projectname', 'cangjie_compiler'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.projectname cangjie_compiler 1>| 2>|
+
+PID: 2445 START: 1794131485277553152 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2445 END: 1794131485280191744 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/* 1>| 2>|
+
+PID: 2445 START: 1794131485280443648 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2445 END: 1794131485283261440 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'maintenance.auto', 'false'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all maintenance.auto false 1>| 2>|
+
+PID: 2445 START: 1794131485283542272 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2445 END: 1794131485286238720 :git command /workspace/cj/.repo/project-objects/cangjie_compiler.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--replace-all', 'gc.auto', '0'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --replace-all gc.auto 0 1>| 2>|
+
+PID: 2445 START: 1794131485286706944 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_compiler.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_compiler.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2445 END: 1794131487745155840 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'fetch', '--depth=1', '--no-auto-gc', '--quiet', 'origin', '--prune', '--recurse-submodules=no', '--no-tags', '+refs/heads/main:refs/remotes/origin/main'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/projects/cangjie_compiler.git
+: export GIT_OBJECT_DIRECTORY=/workspace/cj/.repo/project-objects/cangjie_compiler.git/objects
+: git fetch --depth=1 --no-auto-gc --quiet origin --prune --recurse-submodules=no --no-tags +refs/heads/main:refs/remotes/origin/main 1>| 2>&1
+
+PID: 2445 START: 1794131487745526272 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2445 END: 1794131487749236480 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'pack-refs', '--all', '--prune'] with debug: : git pack-refs --all --prune 1>| 2>|
+
+PID: 2445 START: 1794131487749402624 :: load refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487749645568 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 END: 1794131487752393984 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 START: 1794131487752629760 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487755303168 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487755508736 :: load refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487755750400 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2445 END: 1794131487758482432 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-m', 'manifest set to main', 'refs/remotes/m/main', 'refs/remotes/origin/main'] with debug: : git symbolic-ref -m manifest set to main refs/remotes/m/main refs/remotes/origin/main 1>| 2>|
+
+PID: 2445 START: 1794131487759139840 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2445 END: 1794131487762250752 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'rev-parse', '--verify', '--quiet', '--end-of-options', 'refs/remotes/origin/main^{commit}'] with debug: : git rev-parse --verify --quiet --end-of-options refs/remotes/origin/main^{commit} 1>| 2>|
+
+PID: 2445 START: 1794131487762517504 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'update-ref', '--no-deref', 'HEAD', '60e05712c5774fae88cb2e49efbaf55f8ac5e9d5'] with debug: 
+: cd /workspace/cj/cangjie_compiler
+: git update-ref --no-deref HEAD 60e05712c5774fae88cb2e49efbaf55f8ac5e9d5 1>| 2>|
+
+PID: 2445 END: 1794131487765620480 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'update-ref', '--no-deref', 'HEAD', '60e05712c5774fae88cb2e49efbaf55f8ac5e9d5'] with debug: 
+: cd /workspace/cj/cangjie_compiler
+: git update-ref --no-deref HEAD 60e05712c5774fae88cb2e49efbaf55f8ac5e9d5 1>| 2>|
+
+PID: 2445 START: 1794131487765920512 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2445 END: 1794131487960643584 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'read-tree', '--reset', '-u', '-v', 'HEAD'] with debug: : git read-tree --reset -u -v HEAD 2>|
+
+PID: 2445 START: 1794131487960922624 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 END: 1794131487961007872 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487961063168 :: load refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487961334528 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 END: 1794131487964338944 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: : git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 START: 1794131487964585728 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487967368448 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 START: 1794131487967647744 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2445 END: 1794131487970324992 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 2445 START: 1794131487970576384 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487973763840 :git command /workspace/cj/.repo/projects/cangjie_compiler.git ['git', 'rev-parse', '--verify', '-q', 'HEAD'] with debug: : git rev-parse --verify -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487974065664 :: load refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487974157312 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 END: 1794131487974246912 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487974857472 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 END: 1794131487974980864 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487975081728 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 END: 1794131487975171584 :: scan refs /workspace/cj/.repo/projects/cangjie_compiler.git
+
+PID: 2445 START: 1794131487975361024 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 END: 1794131487975510784 :: scan refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131487975549952 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131487975874560 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 END: 1794131487979643392 :git command /workspace/cj/.repo/manifests.git ['git', 'for-each-ref', '--format=%(objectname)%00%(refname)%00%(symref)'] with debug: 
+: export GIT_DIR=/workspace/cj/.repo/manifests.git
+: git for-each-ref --format=%(objectname)%00%(refname)%00%(symref) 1>| 2>|
+
+PID: 2445 START: 1794131487980016896 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487983872512 :git command /workspace/cj/.repo/manifests.git ['git', 'symbolic-ref', '-q', 'HEAD'] with debug: : git symbolic-ref -q HEAD 1>| 2>|
+
+PID: 2445 END: 1794131487984204288 :: load refs /workspace/cj/.repo/manifests.git
+
+PID: 2445 START: 1794131487994553600 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 END: 1794131487997164288 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/projects/cangjie_compiler.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspace/cj/.repo/projects/cangjie_compiler.git/config --includes --null --list 1>| 2>|
+
+PID: 2445 START: 1794131487998104064 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.synctime', '2026-11-08T09:51:27.997909+00:00'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.synctime 2026-11-08T09:51:27.997909+00:00 1>| 2>|
+
+PID: 2445 END: 1794131488000937216 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.main.synctime', '2026-11-08T09:51:27.997909+00:00'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.main.synctime 2026-11-08T09:51:27.997909+00:00 1>| 2>|
+
+PID: 2445 START: 1794131488001216512 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.sys.argv', "['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_compiler']"] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.sys.argv ['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_compiler'] 1>| 2>|
+
+PID: 2445 END: 1794131488004048128 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.sys.argv', "['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_compiler']"] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.sys.argv ['/workspace/cj/.repo/repo/main.py', '--repo-dir=/workspace/cj/.repo', '--wrapper-version=2.71', '--wrapper-path=/opt/bin/repo', '--', 'sync', '-c', '-j4', 'cangjie_compiler'] 1>| 2>|
+
+PID: 2445 START: 1794131488004649728 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.newprojectcount', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.newprojectcount 1 1>| 2>|
+
+PID: 2445 END: 1794131488007304960 :git command /workspace/cj/.repo/manifests.git ['git', 'config', '--file', '/workspace/cj/.repo/manifests.git/config', '--includes', '--replace-all', 'repo.syncstate.repo.newprojectcount', '1'] with debug: : git config --file /workspace/cj/.repo/manifests.git/config --includes --replace-all repo.syncstate.repo.newprojectcount 1 1>| 2>|
+
+PID: 2445 END: 1794131488007957248 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: sync, -c, -j4, cangjie_compiler [sid=repo-20261108T095123Z-P0000098d/repo-20261108T095123Z-P0000098d]
+
