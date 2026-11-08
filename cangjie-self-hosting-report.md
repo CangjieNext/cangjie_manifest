@@ -214,7 +214,7 @@ LLVM FAQ 针对"用语言自身编写自举编译器"给出三种对接方式[ci
 
 **论断 2：Driver 调外部 opt/llc，链接用 ld.lld；CHIR 优化在前端内 —— 证实**
 
-- [CJNATIVEBackend.cpp:83-90](file:///workspace/repos/cangjie_compiler/src/Driver/Backend/CJNATIVEBackend.cpp) 在 `CANGJIE_HOME` 的 bin 下查找外部 `opt`/`llc` 可执行文件，找不到即报错退出；`:280,327` 注释明确"opt/llc 每次只能处理一个文件，对每个 bitCodeFile 生成一条命令"。
+- [CJNATIVEBackend.cpp:74-90](file:///workspace/repos/cangjie_compiler/src/Driver/Backend/CJNATIVEBackend.cpp) 在 `CANGJIE_HOME/third_party/llvm/bin`（`:78,:81` 构造搜索路径）下查找外部 `opt`/`llc` 可执行文件，找不到即报错退出；`:280,327` 注释明确"opt/llc 每次只能处理一个文件，对每个 bitCodeFile 生成一条命令"。SDK 实测布局吻合：`bin/` 下仅 `cjc` 及其符号链接 `cjc-frontend`，LLVM 工具链（opt/llc/lld/llvm-ar/lldb 等）全部位于 `third_party/llvm/bin`。
 - 链接器为 SDK 自带 `ld.lld`（[Ohos_CJNATIVE.cpp:66](file:///workspace/repos/cangjie_compiler/src/Driver/Toolchains/CJNATIVE/Ohos_CJNATIVE.cpp)），LTO 走 lld 选项（Linux_CJNATIVE.cpp:151），静态库用 `llvm-ar`（MinGW_CJNATIVE.cpp:96）。
 - [main.cpp:77](file:///workspace/repos/cangjie_compiler/src/main.cpp)：以 `cjc-frontend` 名字执行时进入 Frontend 模式（仅前端到 LLVM IR）；[Driver.cpp:77](file:///workspace/repos/cangjie_compiler/src/Driver/Driver.cpp) 中 Driver 拼接 `cjc-frontend` 路径——前端/后端进程切分与报告 3.2 节描述完全一致。
 - CHIR 中端优化在前端 C++ 内：[CHIR/Optimization/](file:///workspace/repos/cangjie_compiler/src/CHIR/Optimization) 含 `FunctionInline.cpp`（内联）、`DeadCodeElimination.cpp`（DCE）、`Devirtualization.cpp`、`ConstPropagation.cpp` 等 17 个文件；[CHIR/Interpreter/](file:///workspace/repos/cangjie_compiler/src/CHIR/Interpreter) 含 `BCHIRInterpreter.cpp` 等（解释器，供 CHIR 级执行/调试）。
