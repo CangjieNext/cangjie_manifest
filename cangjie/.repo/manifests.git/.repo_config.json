@@ -1,0 +1,125 @@
+{
+  "core.repositoryformatversion": [
+    "1"
+  ],
+  "core.filemode": [
+    "true"
+  ],
+  "filter.lfs.smudge": [
+    "git-lfs smudge --skip -- %f"
+  ],
+  "filter.lfs.process": [
+    "git-lfs filter-process --skip"
+  ],
+  "repo.depth": [
+    "1"
+  ],
+  "repo.existingprojectcount": [
+    "0"
+  ],
+  "repo.newprojectcount": [
+    "3"
+  ],
+  "remote.origin.url": [
+    "https://gitcode.com/Cangjie/cangjie_manifest"
+  ],
+  "remote.origin.fetch": [
+    "+refs/heads/*:refs/remotes/origin/*"
+  ],
+  "manifest.platform": [
+    "auto"
+  ],
+  "extensions.preciousobjects": [
+    "true"
+  ],
+  "maintenance.auto": [
+    "false"
+  ],
+  "gc.auto": [
+    "0"
+  ],
+  "branch.default.remote": [
+    "origin"
+  ],
+  "branch.default.merge": [
+    "refs/heads/main"
+  ],
+  "repo.syncstate.main.synctime": [
+    "2026-11-08T10:02:16.657788+00:00"
+  ],
+  "repo.syncstate.main.version": [
+    "1"
+  ],
+  "repo.syncstate.sys.argv": [
+    "['/workspace/cangjie/.repo/repo/main.py', '--repo-dir=/workspace/cangjie/.repo', '--wrapper-version=2.71', '--wrapper-path=/usr/local/bin/repo', '--', 'sync', '-j2', 'cangjie_compiler', 'cangjie_runtime', 'cangjie_tools']"
+  ],
+  "repo.syncstate.superproject.superproject": [
+    "false"
+  ],
+  "repo.syncstate.superproject.haslocalmanifests": [
+    "true"
+  ],
+  "repo.syncstate.superproject.hassuperprojecttag": [
+    "false"
+  ],
+  "repo.syncstate.options.jobs": [
+    "2"
+  ],
+  "repo.syncstate.options.outermanifest": [
+    "true"
+  ],
+  "repo.syncstate.options.jobsnetwork": [
+    "2"
+  ],
+  "repo.syncstate.options.jobscheckout": [
+    "2"
+  ],
+  "repo.syncstate.options.mpupdate": [
+    "true"
+  ],
+  "repo.syncstate.options.interleaved": [
+    "true"
+  ],
+  "repo.syncstate.options.clonebundle": [
+    "true"
+  ],
+  "repo.syncstate.options.retryfetches": [
+    "0"
+  ],
+  "repo.syncstate.options.prune": [
+    "true"
+  ],
+  "repo.syncstate.options.smartsync": [
+    "false"
+  ],
+  "repo.syncstate.options.repoverify": [
+    "true"
+  ],
+  "repo.syncstate.options.quiet": [
+    "false"
+  ],
+  "repo.syncstate.options.verbose": [
+    "false"
+  ],
+  "repo.syncstate.repo.depth": [
+    "1"
+  ],
+  "repo.syncstate.repo.existingprojectcount": [
+    "0"
+  ],
+  "repo.syncstate.repo.newprojectcount": [
+    "3"
+  ],
+  "repo.syncstate.remote.origin.url": [
+    "https://gitcode.com/Cangjie/cangjie_manifest"
+  ],
+  "repo.syncstate.remote.origin.fetch": [
+    "+refs/heads/*:refs/remotes/origin/*"
+  ],
+  "repo.syncstate.branch.default.remote": [
+    "origin"
+  ],
+  "repo.syncstate.branch.default.merge": [
+    "refs/heads/main"
+  ]
+}
