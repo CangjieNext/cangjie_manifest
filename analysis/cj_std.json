@@ -1,0 +1,533 @@
+{
+ "total": {
+  "files": 495,
+  "loc": 143715,
+  "top": {
+   "class": 374,
+   "struct": 117,
+   "enum": 43,
+   "interface": 112,
+   "type": 8,
+   "func": 466,
+   "const": 103,
+   "var": 1,
+   "prop": 0
+  },
+  "members": 5107,
+  "top_total": 1224
+ },
+ "per_pkg": {
+  "argopt": {
+   "files": 1,
+   "loc": 813,
+   "top": {
+    "class": 2,
+    "struct": 1,
+    "enum": 2,
+    "interface": 0,
+    "type": 0,
+    "func": 1,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 13
+  },
+  "ast": {
+   "files": 21,
+   "loc": 17176,
+   "top": {
+    "class": 100,
+    "struct": 2,
+    "enum": 3,
+    "interface": 2,
+    "type": 0,
+    "func": 21,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 445
+  },
+  "binary": {
+   "files": 1,
+   "loc": 492,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 3,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 56
+  },
+  "collection": {
+   "files": 23,
+   "loc": 11712,
+   "top": {
+    "class": 17,
+    "struct": 0,
+    "enum": 0,
+    "interface": 14,
+    "type": 2,
+    "func": 31,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 417
+  },
+  "concurrent": {
+   "files": 1,
+   "loc": 156,
+   "top": {
+    "class": 1,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 1,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 3
+  },
+  "console": {
+   "files": 3,
+   "loc": 557,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 42
+  },
+  "convert": {
+   "files": 3,
+   "loc": 2751,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 3,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 69
+  },
+  "core": {
+   "files": 60,
+   "loc": 11065,
+   "top": {
+    "class": 29,
+    "struct": 9,
+    "enum": 5,
+    "interface": 17,
+    "type": 3,
+    "func": 48,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 619
+  },
+  "crypto": {
+   "files": 3,
+   "loc": 115,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 2,
+    "type": 0,
+    "func": 3,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 0
+  },
+  "database": {
+   "files": 19,
+   "loc": 2584,
+   "top": {
+    "class": 42,
+    "struct": 0,
+    "enum": 4,
+    "interface": 10,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 142
+  },
+  "deriving": {
+   "files": 40,
+   "loc": 5166,
+   "top": {
+    "class": 2,
+    "struct": 17,
+    "enum": 3,
+    "interface": 9,
+    "type": 0,
+    "func": 16,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 178
+  },
+  "env": {
+   "files": 5,
+   "loc": 1001,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 17,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 40
+  },
+  "fs": {
+   "files": 10,
+   "loc": 2363,
+   "top": {
+    "class": 5,
+    "struct": 3,
+    "enum": 1,
+    "interface": 0,
+    "type": 0,
+    "func": 12,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 83
+  },
+  "interop": {
+   "files": 1,
+   "loc": 74,
+   "top": {
+    "class": 4,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 4
+  },
+  "io": {
+   "files": 11,
+   "loc": 1652,
+   "top": {
+    "class": 9,
+    "struct": 0,
+    "enum": 1,
+    "interface": 4,
+    "type": 0,
+    "func": 4,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 98
+  },
+  "math": {
+   "files": 12,
+   "loc": 9987,
+   "top": {
+    "class": 0,
+    "struct": 2,
+    "enum": 2,
+    "interface": 5,
+    "type": 0,
+    "func": 172,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 206
+  },
+  "net": {
+   "files": 36,
+   "loc": 9415,
+   "top": {
+    "class": 16,
+    "struct": 10,
+    "enum": 1,
+    "interface": 3,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 377
+  },
+  "objectpool": {
+   "files": 1,
+   "loc": 51,
+   "top": {
+    "class": 1,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 3
+  },
+  "overflow": {
+   "files": 6,
+   "loc": 2878,
+   "top": {
+    "class": 2,
+    "struct": 0,
+    "enum": 0,
+    "interface": 10,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 509
+  },
+  "posix": {
+   "files": 4,
+   "loc": 2793,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 67,
+    "const": 103,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 0
+  },
+  "process": {
+   "files": 7,
+   "loc": 2578,
+   "top": {
+    "class": 5,
+    "struct": 0,
+    "enum": 1,
+    "interface": 0,
+    "type": 0,
+    "func": 7,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 61
+  },
+  "random": {
+   "files": 1,
+   "loc": 570,
+   "top": {
+    "class": 1,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 31
+  },
+  "ref": {
+   "files": 1,
+   "loc": 102,
+   "top": {
+    "class": 1,
+    "struct": 0,
+    "enum": 1,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 6
+  },
+  "reflect": {
+   "files": 17,
+   "loc": 4949,
+   "top": {
+    "class": 26,
+    "struct": 0,
+    "enum": 1,
+    "interface": 0,
+    "type": 1,
+    "func": 1,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 247
+  },
+  "regex": {
+   "files": 6,
+   "loc": 1189,
+   "top": {
+    "class": 4,
+    "struct": 2,
+    "enum": 1,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 48
+  },
+  "runtime": {
+   "files": 6,
+   "loc": 742,
+   "top": {
+    "class": 1,
+    "struct": 3,
+    "enum": 0,
+    "interface": 0,
+    "type": 1,
+    "func": 24,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 22
+  },
+  "sort": {
+   "files": 5,
+   "loc": 2913,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 2,
+    "type": 0,
+    "func": 16,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 6
+  },
+  "(root)": {
+   "files": 1,
+   "loc": 10,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 0
+  },
+  "sync": {
+   "files": 14,
+   "loc": 3527,
+   "top": {
+    "class": 24,
+    "struct": 1,
+    "enum": 3,
+    "interface": 4,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 252
+  },
+  "time": {
+   "files": 9,
+   "loc": 4428,
+   "top": {
+    "class": 4,
+    "struct": 2,
+    "enum": 2,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 106
+  },
+  "unicode": {
+   "files": 1,
+   "loc": 3733,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 1,
+    "interface": 2,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 24
+  },
+  "unittest": {
+   "files": 166,
+   "loc": 36173,
+   "top": {
+    "class": 72,
+    "struct": 65,
+    "enum": 11,
+    "interface": 22,
+    "type": 1,
+    "func": 25,
+    "const": 0,
+    "var": 1,
+    "prop": 0
+   },
+   "members": 1000
+  }
+ }
+}

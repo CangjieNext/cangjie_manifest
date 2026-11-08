@@ -1,0 +1,261 @@
+{
+ "total": {
+  "files": 474,
+  "loc": 206403,
+  "top": {
+   "class": 13,
+   "struct": 227,
+   "enum": 32,
+   "protocol": 164,
+   "func": 569,
+   "typealias": 166,
+   "var": 142,
+   "let": 47,
+   "actor": 0,
+   "macro": 19
+  },
+  "members": 5073,
+  "top_total": 1379,
+  "pkg_count": 14
+ },
+ "per_pkg": {
+  "Concurrency": {
+   "files": 79,
+   "loc": 20675,
+   "top": {
+    "class": 3,
+    "struct": 46,
+    "enum": 1,
+    "protocol": 12,
+    "func": 43,
+    "typealias": 3,
+    "var": 1,
+    "let": 0,
+    "actor": 0,
+    "macro": 2
+   },
+   "members": 428
+  },
+  "Cxx": {
+   "files": 15,
+   "loc": 2022,
+   "top": {
+    "class": 0,
+    "struct": 2,
+    "enum": 0,
+    "protocol": 20,
+    "func": 2,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 121
+  },
+  "Differentiation": {
+   "files": 9,
+   "loc": 2096,
+   "top": {
+    "class": 0,
+    "struct": 2,
+    "enum": 0,
+    "protocol": 1,
+    "func": 92,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 35
+  },
+  "Distributed": {
+   "files": 7,
+   "loc": 2895,
+   "top": {
+    "class": 2,
+    "struct": 10,
+    "enum": 0,
+    "protocol": 10,
+    "func": 13,
+    "typealias": 1,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 1
+   },
+   "members": 62
+  },
+  "EmbeddedPlatform": {
+   "files": 2,
+   "loc": 433,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "protocol": 0,
+    "func": 25,
+    "typealias": 0,
+    "var": 0,
+    "let": 1,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 0
+  },
+  "Observation": {
+   "files": 7,
+   "loc": 1849,
+   "top": {
+    "class": 0,
+    "struct": 3,
+    "enum": 0,
+    "protocol": 1,
+    "func": 6,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 3
+   },
+   "members": 39
+  },
+  "Platform": {
+   "files": 6,
+   "loc": 1714,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 5,
+    "protocol": 0,
+    "func": 15,
+    "typealias": 4,
+    "var": 107,
+    "let": 28,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 92
+  },
+  "RuntimeModule": {
+   "files": 57,
+   "loc": 22448,
+   "top": {
+    "class": 3,
+    "struct": 27,
+    "enum": 4,
+    "protocol": 5,
+    "func": 11,
+    "typealias": 3,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 471
+  },
+  "SwiftOnoneSupport": {
+   "files": 1,
+   "loc": 415,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "protocol": 0,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 0
+  },
+  "Synchronization": {
+   "files": 21,
+   "loc": 4110,
+   "top": {
+    "class": 0,
+    "struct": 17,
+    "enum": 0,
+    "protocol": 2,
+    "func": 1,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 104
+  },
+  "Volatile": {
+   "files": 1,
+   "loc": 109,
+   "top": {
+    "class": 0,
+    "struct": 1,
+    "enum": 0,
+    "protocol": 0,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 9
+  },
+  "Windows": {
+   "files": 1,
+   "loc": 299,
+   "top": {
+    "class": 0,
+    "struct": 1,
+    "enum": 0,
+    "protocol": 0,
+    "func": 2,
+    "typealias": 0,
+    "var": 29,
+    "let": 18,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 11
+  },
+  "core": {
+   "files": 258,
+   "loc": 143296,
+   "top": {
+    "class": 5,
+    "struct": 118,
+    "enum": 22,
+    "protocol": 113,
+    "func": 359,
+    "typealias": 155,
+    "var": 5,
+    "let": 0,
+    "actor": 0,
+    "macro": 13
+   },
+   "members": 3651
+  },
+  "libexec": {
+   "files": 10,
+   "loc": 4042,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "protocol": 0,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 50
+  }
+ }
+}

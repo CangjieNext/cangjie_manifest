@@ -1,0 +1,91 @@
+{
+ "total": {
+  "files": 175,
+  "loc": 71330,
+  "top": {
+   "class": 22,
+   "struct": 39,
+   "enum": 6,
+   "protocol": 33,
+   "func": 139,
+   "typealias": 43,
+   "var": 126,
+   "let": 57,
+   "actor": 0,
+   "macro": 1
+  },
+  "members": 2710,
+  "top_total": 466,
+  "pkg_count": 4
+ },
+ "per_pkg": {
+  "Foundation": {
+   "files": 131,
+   "loc": 54409,
+   "top": {
+    "class": 22,
+    "struct": 37,
+    "enum": 4,
+    "protocol": 24,
+    "func": 139,
+    "typealias": 43,
+    "var": 126,
+    "let": 39,
+    "actor": 0,
+    "macro": 1
+   },
+   "members": 2527
+  },
+  "FoundationNetworking": {
+   "files": 32,
+   "loc": 12049,
+   "top": {
+    "class": 0,
+    "struct": 2,
+    "enum": 2,
+    "protocol": 8,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 18,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 134
+  },
+  "FoundationXML": {
+   "files": 7,
+   "loc": 3067,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "protocol": 1,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 47
+  },
+  "plutil": {
+   "files": 5,
+   "loc": 1805,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "protocol": 0,
+    "func": 0,
+    "typealias": 0,
+    "var": 0,
+    "let": 0,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 2
+  }
+ }
+}

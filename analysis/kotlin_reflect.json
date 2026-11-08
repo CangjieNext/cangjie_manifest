@@ -1,0 +1,18 @@
+{
+ "total": {
+  "files": 0,
+  "loc": 0,
+  "top": {
+   "class": 0,
+   "object": 0,
+   "interface": 0,
+   "fun": 0,
+   "val": 0,
+   "var": 0,
+   "typealias": 0
+  },
+  "members": 0,
+  "top_total": 0
+ },
+ "per_pkg": {}
+}

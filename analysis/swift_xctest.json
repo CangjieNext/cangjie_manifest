@@ -1,0 +1,40 @@
+{
+ "total": {
+  "files": 34,
+  "loc": 5030,
+  "top": {
+   "class": 2,
+   "struct": 3,
+   "enum": 0,
+   "protocol": 2,
+   "func": 37,
+   "typealias": 5,
+   "var": 0,
+   "let": 1,
+   "actor": 0,
+   "macro": 0
+  },
+  "members": 63,
+  "top_total": 50,
+  "pkg_count": 1
+ },
+ "per_pkg": {
+  "XCTest": {
+   "files": 34,
+   "loc": 5030,
+   "top": {
+    "class": 2,
+    "struct": 3,
+    "enum": 0,
+    "protocol": 2,
+    "func": 37,
+    "typealias": 5,
+    "var": 0,
+    "let": 1,
+    "actor": 0,
+    "macro": 0
+   },
+   "members": 63
+  }
+ }
+}

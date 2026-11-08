@@ -1,0 +1,215 @@
+{
+ "total": {
+  "files": 962,
+  "loc": 140283,
+  "top": {
+   "class": 856,
+   "object": 11,
+   "interface": 460,
+   "fun": 6833,
+   "val": 320,
+   "var": 3,
+   "typealias": 18
+  },
+  "members": 20635,
+  "top_total": 8501
+ },
+ "per_pkg": {
+  "common": {
+   "files": 34,
+   "loc": 35858,
+   "top": {
+    "class": 57,
+    "object": 0,
+    "interface": 2,
+    "fun": 3674,
+    "val": 40,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 4362
+  },
+  "common-js-wasmjs": {
+   "files": 14,
+   "loc": 266,
+   "top": {
+    "class": 13,
+    "object": 0,
+    "interface": 2,
+    "fun": 21,
+    "val": 3,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 9
+  },
+  "common-non-jvm": {
+   "files": 18,
+   "loc": 811,
+   "top": {
+    "class": 17,
+    "object": 0,
+    "interface": 0,
+    "fun": 35,
+    "val": 2,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 30
+  },
+  "jdk7": {
+   "files": 11,
+   "loc": 1531,
+   "top": {
+    "class": 4,
+    "object": 0,
+    "interface": 2,
+    "fun": 80,
+    "val": 6,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 79
+  },
+  "jdk8": {
+   "files": 8,
+   "loc": 271,
+   "top": {
+    "class": 0,
+    "object": 0,
+    "interface": 0,
+    "fun": 22,
+    "val": 0,
+    "var": 0,
+    "typealias": 1
+   },
+   "members": 3
+  },
+  "jklib-for-test": {
+   "files": 9,
+   "loc": 227,
+   "top": {
+    "class": 11,
+    "object": 1,
+    "interface": 24,
+    "fun": 9,
+    "val": 1,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 56
+  },
+  "js": {
+   "files": 204,
+   "loc": 30000,
+   "top": {
+    "class": 422,
+    "object": 2,
+    "interface": 249,
+    "fun": 707,
+    "val": 207,
+    "var": 2,
+    "typealias": 9
+   },
+   "members": 9025
+  },
+  "js-ir-minimal-for-test": {
+   "files": 11,
+   "loc": 370,
+   "top": {
+    "class": 1,
+    "object": 0,
+    "interface": 11,
+    "fun": 22,
+    "val": 1,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 64
+  },
+  "jvm": {
+   "files": 168,
+   "loc": 17958,
+   "top": {
+    "class": 98,
+    "object": 2,
+    "interface": 70,
+    "fun": 942,
+    "val": 32,
+    "var": 0,
+    "typealias": 5
+   },
+   "members": 1644
+  },
+  "jvm-minimal-for-test": {
+   "files": 6,
+   "loc": 236,
+   "top": {
+    "class": 0,
+    "object": 0,
+    "interface": 1,
+    "fun": 22,
+    "val": 1,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 5
+  },
+  "native-wasm": {
+   "files": 109,
+   "loc": 13677,
+   "top": {
+    "class": 14,
+    "object": 0,
+    "interface": 17,
+    "fun": 47,
+    "val": 5,
+    "var": 0,
+    "typealias": 2
+   },
+   "members": 1227
+  },
+  "src": {
+   "files": 168,
+   "loc": 19244,
+   "top": {
+    "class": 150,
+    "object": 4,
+    "interface": 66,
+    "fun": 707,
+    "val": 12,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 1990
+  },
+  "unsigned": {
+   "files": 16,
+   "loc": 2126,
+   "top": {
+    "class": 13,
+    "object": 0,
+    "interface": 0,
+    "fun": 80,
+    "val": 0,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 271
+  },
+  "wasm": {
+   "files": 186,
+   "loc": 17708,
+   "top": {
+    "class": 56,
+    "object": 2,
+    "interface": 16,
+    "fun": 465,
+    "val": 10,
+    "var": 1,
+    "typealias": 1
+   },
+   "members": 1870
+  }
+ }
+}

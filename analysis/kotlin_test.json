@@ -1,0 +1,103 @@
+{
+ "total": {
+  "files": 9,
+  "loc": 256,
+  "top": {
+   "class": 6,
+   "object": 2,
+   "interface": 0,
+   "fun": 3,
+   "val": 0,
+   "var": 0,
+   "typealias": 12
+  },
+  "members": 10,
+  "top_total": 23
+ },
+ "per_pkg": {
+  "annotations-common": {
+   "files": 1,
+   "loc": 26,
+   "top": {
+    "class": 4,
+    "object": 0,
+    "interface": 0,
+    "fun": 0,
+    "val": 0,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 0
+  },
+  "js": {
+   "files": 1,
+   "loc": 1,
+   "top": {
+    "class": 0,
+    "object": 0,
+    "interface": 0,
+    "fun": 1,
+    "val": 0,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 0
+  },
+  "junit": {
+   "files": 2,
+   "loc": 79,
+   "top": {
+    "class": 1,
+    "object": 1,
+    "interface": 0,
+    "fun": 0,
+    "val": 0,
+    "var": 0,
+    "typealias": 4
+   },
+   "members": 3
+  },
+  "junit5": {
+   "files": 2,
+   "loc": 73,
+   "top": {
+    "class": 1,
+    "object": 1,
+    "interface": 0,
+    "fun": 0,
+    "val": 0,
+    "var": 0,
+    "typealias": 4
+   },
+   "members": 3
+  },
+  "jvm": {
+   "files": 2,
+   "loc": 64,
+   "top": {
+    "class": 0,
+    "object": 0,
+    "interface": 0,
+    "fun": 2,
+    "val": 0,
+    "var": 0,
+    "typealias": 0
+   },
+   "members": 3
+  },
+  "testng": {
+   "files": 1,
+   "loc": 13,
+   "top": {
+    "class": 0,
+    "object": 0,
+    "interface": 0,
+    "fun": 0,
+    "val": 0,
+    "var": 0,
+    "typealias": 4
+   },
+   "members": 1
+  }
+ }
+}

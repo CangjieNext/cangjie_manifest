@@ -1,0 +1,293 @@
+{
+ "total": {
+  "files": 273,
+  "loc": 98759,
+  "top": {
+   "class": 327,
+   "struct": 26,
+   "enum": 48,
+   "interface": 22,
+   "type": 4,
+   "func": 26,
+   "const": 0,
+   "var": 0,
+   "prop": 0
+  },
+  "members": 2809,
+  "top_total": 453
+ },
+ "per_pkg": {
+  "actors": {
+   "files": 11,
+   "loc": 1119,
+   "top": {
+    "class": 2,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 10
+  },
+  "aspect_cj": {
+   "files": 3,
+   "loc": 849,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 7
+  },
+  "chir": {
+   "files": 25,
+   "loc": 16924,
+   "top": {
+    "class": 98,
+    "struct": 1,
+    "enum": 7,
+    "interface": 0,
+    "type": 0,
+    "func": 4,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 747
+  },
+  "compress": {
+   "files": 26,
+   "loc": 3936,
+   "top": {
+    "class": 16,
+    "struct": 0,
+    "enum": 4,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 81
+  },
+  "crypto": {
+   "files": 45,
+   "loc": 9827,
+   "top": {
+    "class": 26,
+    "struct": 15,
+    "enum": 4,
+    "interface": 7,
+    "type": 1,
+    "func": 2,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 330
+  },
+  "effect": {
+   "files": 4,
+   "loc": 213,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 9
+  },
+  "encoding": {
+   "files": 22,
+   "loc": 7508,
+   "top": {
+    "class": 14,
+    "struct": 1,
+    "enum": 2,
+    "interface": 3,
+    "type": 0,
+    "func": 4,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 212
+  },
+  "fuzz": {
+   "files": 7,
+   "loc": 1139,
+   "top": {
+    "class": 5,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 57
+  },
+  "log": {
+   "files": 9,
+   "loc": 513,
+   "top": {
+    "class": 5,
+    "struct": 1,
+    "enum": 0,
+    "interface": 1,
+    "type": 1,
+    "func": 2,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 78
+  },
+  "logger": {
+   "files": 5,
+   "loc": 616,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 48
+  },
+  "net": {
+   "files": 68,
+   "loc": 25559,
+   "top": {
+    "class": 33,
+    "struct": 6,
+    "enum": 9,
+    "interface": 9,
+    "type": 2,
+    "func": 5,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 490
+  },
+  "plugin": {
+   "files": 4,
+   "loc": 148,
+   "top": {
+    "class": 2,
+    "struct": 1,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 1,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 4
+  },
+  "serialization": {
+   "files": 3,
+   "loc": 1114,
+   "top": {
+    "class": 10,
+    "struct": 0,
+    "enum": 0,
+    "interface": 1,
+    "type": 0,
+    "func": 1,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 61
+  },
+  "(root)": {
+   "files": 1,
+   "loc": 41,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 0
+  },
+  "string_intern": {
+   "files": 16,
+   "loc": 1297,
+   "top": {
+    "class": 0,
+    "struct": 0,
+    "enum": 0,
+    "interface": 1,
+    "type": 0,
+    "func": 0,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 52
+  },
+  "syntax": {
+   "files": 21,
+   "loc": 27410,
+   "top": {
+    "class": 104,
+    "struct": 1,
+    "enum": 22,
+    "interface": 0,
+    "type": 0,
+    "func": 4,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 621
+  },
+  "unittest": {
+   "files": 3,
+   "loc": 546,
+   "top": {
+    "class": 3,
+    "struct": 0,
+    "enum": 0,
+    "interface": 0,
+    "type": 0,
+    "func": 3,
+    "const": 0,
+    "var": 0,
+    "prop": 0
+   },
+   "members": 2
+  }
+ }
+}

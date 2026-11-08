@@ -1,0 +1,589 @@
+{
+ "total": {
+  "files": 2395,
+  "loc": 799809,
+  "top": {
+   "type": 3473,
+   "func": 6640,
+   "const": 63228,
+   "var": 724
+  },
+  "members": 19282,
+  "top_total": 74065,
+  "pkg_count": 52
+ },
+ "per_pkg": {
+  "archive": {
+   "files": 12,
+   "loc": 5354,
+   "top": {
+    "type": 12,
+    "func": 9,
+    "const": 14,
+    "var": 9
+   },
+   "members": 191
+  },
+  "arena": {
+   "files": 1,
+   "loc": 88,
+   "top": {
+    "type": 1,
+    "func": 4,
+    "const": 0,
+    "var": 0
+   },
+   "members": 1
+  },
+  "bufio": {
+   "files": 2,
+   "loc": 1290,
+   "top": {
+    "type": 5,
+    "func": 10,
+    "const": 1,
+    "var": 9
+   },
+   "members": 39
+  },
+  "builtin": {
+   "files": 1,
+   "loc": 315,
+   "top": {
+    "type": 6,
+    "func": 0,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "bytes": {
+   "files": 4,
+   "loc": 2265,
+   "top": {
+    "type": 2,
+    "func": 61,
+    "const": 1,
+    "var": 1
+   },
+   "members": 40
+  },
+  "cmp": {
+   "files": 1,
+   "loc": 78,
+   "top": {
+    "type": 1,
+    "func": 3,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "compress": {
+   "files": 26,
+   "loc": 7762,
+   "top": {
+    "type": 16,
+    "func": 15,
+    "const": 15,
+    "var": 5
+   },
+   "members": 156
+  },
+  "container": {
+   "files": 3,
+   "loc": 492,
+   "top": {
+    "type": 4,
+    "func": 7,
+    "const": 0,
+    "var": 0
+   },
+   "members": 30
+  },
+  "context": {
+   "files": 1,
+   "loc": 812,
+   "top": {
+    "type": 3,
+    "func": 12,
+    "const": 0,
+    "var": 2
+   },
+   "members": 26
+  },
+  "crypto": {
+   "files": 348,
+   "loc": 97051,
+   "top": {
+    "type": 458,
+    "func": 764,
+    "const": 285,
+    "var": 144
+   },
+   "members": 1383
+  },
+  "database": {
+   "files": 7,
+   "loc": 5584,
+   "top": {
+    "type": 63,
+    "func": 10,
+    "const": 0,
+    "var": 11
+   },
+   "members": 170
+  },
+  "debug": {
+   "files": 29,
+   "loc": 15246,
+   "top": {
+    "type": 158,
+    "func": 25,
+    "const": 112,
+    "var": 4
+   },
+   "members": 324
+  },
+  "embed": {
+   "files": 1,
+   "loc": 442,
+   "top": {
+    "type": 1,
+    "func": 0,
+    "const": 0,
+    "var": 0
+   },
+   "members": 23
+  },
+  "encoding": {
+   "files": 76,
+   "loc": 35775,
+   "top": {
+    "type": 114,
+    "func": 171,
+    "const": 37,
+    "var": 33
+   },
+   "members": 637
+  },
+  "errors": {
+   "files": 3,
+   "loc": 365,
+   "top": {
+    "type": 0,
+    "func": 6,
+    "const": 0,
+    "var": 1
+   },
+   "members": 3
+  },
+  "expvar": {
+   "files": 1,
+   "loc": 418,
+   "top": {
+    "type": 7,
+    "func": 8,
+    "const": 0,
+    "var": 0
+   },
+   "members": 27
+  },
+  "flag": {
+   "files": 1,
+   "loc": 1184,
+   "top": {
+    "type": 5,
+    "func": 34,
+    "const": 0,
+    "var": 3
+   },
+   "members": 76
+  },
+  "fmt": {
+   "files": 5,
+   "loc": 3150,
+   "top": {
+    "type": 6,
+    "func": 23,
+    "const": 0,
+    "var": 0
+   },
+   "members": 94
+  },
+  "go": {
+   "files": 134,
+   "loc": 50652,
+   "top": {
+    "type": 128,
+    "func": 154,
+    "const": 10,
+    "var": 6
+   },
+   "members": 1273
+  },
+  "hash": {
+   "files": 18,
+   "loc": 2444,
+   "top": {
+    "type": 11,
+    "func": 23,
+    "const": 8,
+    "var": 1
+   },
+   "members": 103
+  },
+  "html": {
+   "files": 20,
+   "loc": 7141,
+   "top": {
+    "type": 4,
+    "func": 15,
+    "const": 0,
+    "var": 0
+   },
+   "members": 47
+  },
+  "image": {
+   "files": 22,
+   "loc": 10485,
+   "top": {
+    "type": 51,
+    "func": 37,
+    "const": 4,
+    "var": 17
+   },
+   "members": 262
+  },
+  "index": {
+   "files": 3,
+   "loc": 3021,
+   "top": {
+    "type": 1,
+    "func": 1,
+    "const": 0,
+    "var": 0
+   },
+   "members": 11
+  },
+  "io": {
+   "files": 14,
+   "loc": 2264,
+   "top": {
+    "type": 41,
+    "func": 34,
+    "const": 4,
+    "var": 15
+   },
+   "members": 59
+  },
+  "iter": {
+   "files": 1,
+   "loc": 269,
+   "top": {
+    "type": 2,
+    "func": 2,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "log": {
+   "files": 19,
+   "loc": 3876,
+   "top": {
+    "type": 19,
+    "func": 63,
+    "const": 6,
+    "var": 3
+   },
+   "members": 159
+  },
+  "maps": {
+   "files": 2,
+   "loc": 167,
+   "top": {
+    "type": 0,
+    "func": 11,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "math": {
+   "files": 132,
+   "loc": 22996,
+   "top": {
+    "type": 26,
+    "func": 192,
+    "const": 39,
+    "var": 10
+   },
+   "members": 395
+  },
+  "mime": {
+   "files": 16,
+   "loc": 2779,
+   "top": {
+    "type": 10,
+    "func": 10,
+    "const": 2,
+    "var": 2
+   },
+   "members": 46
+  },
+  "net": {
+   "files": 267,
+   "loc": 70700,
+   "top": {
+    "type": 179,
+    "func": 213,
+    "const": 88,
+    "var": 70
+   },
+   "members": 1957
+  },
+  "os": {
+   "files": 150,
+   "loc": 16000,
+   "top": {
+    "type": 22,
+    "func": 97,
+    "const": 24,
+    "var": 19
+   },
+   "members": 279
+  },
+  "path": {
+   "files": 11,
+   "loc": 1812,
+   "top": {
+    "type": 1,
+    "func": 31,
+    "const": 2,
+    "var": 4
+   },
+   "members": 3
+  },
+  "plugin": {
+   "files": 3,
+   "loc": 273,
+   "top": {
+    "type": 2,
+    "func": 1,
+    "const": 0,
+    "var": 0
+   },
+   "members": 1
+  },
+  "reflect": {
+   "files": 17,
+   "loc": 8837,
+   "top": {
+    "type": 15,
+    "func": 30,
+    "const": 2,
+    "var": 0
+   },
+   "members": 183
+  },
+  "regexp": {
+   "files": 12,
+   "loc": 6514,
+   "top": {
+    "type": 10,
+    "func": 12,
+    "const": 2,
+    "var": 0
+   },
+   "members": 176
+  },
+  "runtime": {
+   "files": 500,
+   "loc": 117811,
+   "top": {
+    "type": 30,
+    "func": 95,
+    "const": 3,
+    "var": 1
+   },
+   "members": 2138
+  },
+  "simd": {
+   "files": 166,
+   "loc": 89451,
+   "top": {
+    "type": 301,
+    "func": 806,
+    "const": 23,
+    "var": 31
+   },
+   "members": 7875
+  },
+  "slices": {
+   "files": 5,
+   "loc": 1811,
+   "top": {
+    "type": 0,
+    "func": 40,
+    "const": 0,
+    "var": 0
+   },
+   "members": 1
+  },
+  "sort": {
+   "files": 5,
+   "loc": 1415,
+   "top": {
+    "type": 4,
+    "func": 18,
+    "const": 0,
+    "var": 0
+   },
+   "members": 17
+  },
+  "strconv": {
+   "files": 6,
+   "loc": 1749,
+   "top": {
+    "type": 1,
+    "func": 34,
+    "const": 1,
+    "var": 2
+   },
+   "members": 2
+  },
+  "strings": {
+   "files": 8,
+   "loc": 2456,
+   "top": {
+    "type": 3,
+    "func": 58,
+    "const": 0,
+    "var": 0
+   },
+   "members": 41
+  },
+  "structs": {
+   "files": 2,
+   "loc": 42,
+   "top": {
+    "type": 1,
+    "func": 0,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "sync": {
+   "files": 17,
+   "loc": 2590,
+   "top": {
+    "type": 16,
+    "func": 57,
+    "const": 0,
+    "var": 0
+   },
+   "members": 97
+  },
+  "syscall": {
+   "files": 254,
+   "loc": 160414,
+   "top": {
+    "type": 1660,
+    "func": 3312,
+    "const": 62498,
+    "var": 39
+   },
+   "members": 321
+  },
+  "testing": {
+   "files": 22,
+   "loc": 8368,
+   "top": {
+    "type": 21,
+    "func": 34,
+    "const": 0,
+    "var": 7
+   },
+   "members": 209
+  },
+  "text": {
+   "files": 11,
+   "loc": 6462,
+   "top": {
+    "type": 33,
+    "func": 19,
+    "const": 12,
+    "var": 0
+   },
+   "members": 279
+  },
+  "time": {
+   "files": 21,
+   "loc": 6581,
+   "top": {
+    "type": 8,
+    "func": 19,
+    "const": 24,
+    "var": 2
+   },
+   "members": 106
+  },
+  "unicode": {
+   "files": 7,
+   "loc": 11545,
+   "top": {
+    "type": 5,
+    "func": 43,
+    "const": 11,
+    "var": 273
+   },
+   "members": 3
+  },
+  "unique": {
+   "files": 4,
+   "loc": 553,
+   "top": {
+    "type": 1,
+    "func": 1,
+    "const": 0,
+    "var": 0
+   },
+   "members": 11
+  },
+  "unsafe": {
+   "files": 1,
+   "loc": 267,
+   "top": {
+    "type": 3,
+    "func": 8,
+    "const": 0,
+    "var": 0
+   },
+   "members": 0
+  },
+  "uuid": {
+   "files": 1,
+   "loc": 287,
+   "top": {
+    "type": 1,
+    "func": 7,
+    "const": 0,
+    "var": 0
+   },
+   "members": 7
+  },
+  "weak": {
+   "files": 2,
+   "loc": 106,
+   "top": {
+    "type": 1,
+    "func": 1,
+    "const": 0,
+    "var": 0
+   },
+   "members": 1
+  }
+ }
+}

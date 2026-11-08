@@ -1,0 +1,276 @@
+{
+ "total": {
+  "files": 1445,
+  "loc": 957827,
+  "top": {
+   "fn": 22406,
+   "struct": 1134,
+   "enum": 149,
+   "union": 13,
+   "trait": 281,
+   "type": 385,
+   "const": 3605,
+   "static": 1,
+   "mod": 469,
+   "use": 978,
+   "macro": 52
+  },
+  "members": 9348,
+  "top_total": 28495
+ },
+ "std_crates_only": {
+  "files": 1443,
+  "loc": 957695,
+  "top": {
+   "fn": 22406,
+   "struct": 1134,
+   "enum": 149,
+   "union": 13,
+   "trait": 281,
+   "type": 385,
+   "const": 3605,
+   "static": 1,
+   "mod": 469,
+   "use": 978,
+   "macro": 52
+  },
+  "members": 9348,
+  "top_total": 28495
+ },
+ "per_pkg": {
+  "alloc": {
+   "files": 97,
+   "loc": 70007,
+   "top": {
+    "fn": 21,
+    "struct": 90,
+    "enum": 5,
+    "union": 0,
+    "trait": 11,
+    "type": 1,
+    "const": 1,
+    "static": 0,
+    "mod": 26,
+    "use": 92,
+    "macro": 0
+   },
+   "members": 815
+  },
+  "core": {
+   "files": 294,
+   "loc": 178210,
+   "top": {
+    "fn": 324,
+    "struct": 256,
+    "enum": 46,
+    "union": 1,
+    "trait": 165,
+    "type": 20,
+    "const": 198,
+    "static": 1,
+    "mod": 128,
+    "use": 277,
+    "macro": 42
+   },
+   "members": 2490
+  },
+  "panic_abort": {
+   "files": 3,
+   "loc": 127,
+   "top": {
+    "fn": 2,
+    "struct": 0,
+    "enum": 0,
+    "union": 0,
+    "trait": 0,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 0,
+    "use": 0,
+    "macro": 0
+   },
+   "members": 0
+  },
+  "panic_unwind": {
+   "files": 5,
+   "loc": 554,
+   "top": {
+    "fn": 2,
+    "struct": 0,
+    "enum": 0,
+    "union": 0,
+    "trait": 0,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 0,
+    "use": 0,
+    "macro": 0
+   },
+   "members": 0
+  },
+  "portable-simd": {
+   "files": 80,
+   "loc": 10777,
+   "top": {
+    "fn": 33,
+    "struct": 8,
+    "enum": 0,
+    "union": 0,
+    "trait": 10,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 6,
+    "use": 27,
+    "macro": 1
+   },
+   "members": 118
+  },
+  "proc_macro": {
+   "files": 17,
+   "loc": 5086,
+   "top": {
+    "fn": 3,
+    "struct": 26,
+    "enum": 10,
+    "union": 0,
+    "trait": 3,
+    "type": 0,
+    "const": 2,
+    "static": 0,
+    "mod": 6,
+    "use": 4,
+    "macro": 1
+   },
+   "members": 96
+  },
+  "profiler_builtins": {
+   "files": 2,
+   "loc": 132,
+   "top": {
+    "fn": 0,
+    "struct": 0,
+    "enum": 0,
+    "union": 0,
+    "trait": 0,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 0,
+    "use": 0,
+    "macro": 0
+   },
+   "members": 0
+  },
+  "rtstartup": {
+   "files": 2,
+   "loc": 157,
+   "top": {
+    "fn": 2,
+    "struct": 0,
+    "enum": 0,
+    "union": 0,
+    "trait": 6,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 2,
+    "use": 0,
+    "macro": 0
+   },
+   "members": 5
+  },
+  "std": {
+   "files": 655,
+   "loc": 155924,
+   "top": {
+    "fn": 892,
+    "struct": 596,
+    "enum": 33,
+    "union": 12,
+    "trait": 82,
+    "type": 326,
+    "const": 2754,
+    "static": 0,
+    "mod": 286,
+    "use": 380,
+    "macro": 8
+   },
+   "members": 5086
+  },
+  "std_detect": {
+   "files": 42,
+   "loc": 4746,
+   "top": {
+    "fn": 1,
+    "struct": 0,
+    "enum": 0,
+    "union": 0,
+    "trait": 0,
+    "type": 0,
+    "const": 0,
+    "static": 0,
+    "mod": 1,
+    "use": 1,
+    "macro": 0
+   },
+   "members": 13
+  },
+  "stdarch": {
+   "files": 213,
+   "loc": 524026,
+   "top": {
+    "fn": 21107,
+    "struct": 142,
+    "enum": 41,
+    "union": 0,
+    "trait": 3,
+    "type": 34,
+    "const": 648,
+    "static": 0,
+    "mod": 11,
+    "use": 182,
+    "macro": 0
+   },
+   "members": 629
+  },
+  "test": {
+   "files": 31,
+   "loc": 7458,
+   "top": {
+    "fn": 17,
+    "struct": 15,
+    "enum": 12,
+    "union": 0,
+    "trait": 1,
+    "type": 0,
+    "const": 1,
+    "static": 0,
+    "mod": 3,
+    "use": 11,
+    "macro": 0
+   },
+   "members": 56
+  },
+  "unwind": {
+   "files": 4,
+   "loc": 623,
+   "top": {
+    "fn": 2,
+    "struct": 1,
+    "enum": 2,
+    "union": 0,
+    "trait": 0,
+    "type": 4,
+    "const": 1,
+    "static": 0,
+    "mod": 0,
+    "use": 4,
+    "macro": 0
+   },
+   "members": 40
+  }
+ }
+}
