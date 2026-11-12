@@ -13,7 +13,7 @@
 | **推荐落点** | **标准库层（`std.sync` / `std.objectpool` 复活）**，不改运行时与编译器 |
 | **最小可行版本（MVP）工作量** | **纯仓颉代码，1 人 × 3~5 天**（含测试与 benchmark） |
 | **完整对齐 Go 语义（含 per-P 无锁 + GC 联动）** | **1 人 × 3~5 周**，需动运行时 C++（新增 ~3 个导出符号） |
-| **最大风险** | 仓颉**没有 GC 回调钩子**（Go 的 `poolCleanup` 无对应物），导致"GC 后清理池"只能退化为轮询/弱引用近似 |
+| **最大风险** | 仓颉**没有 GC 回调钩子**（Go 的 `poolCleanup` 无对应物），导致"GC 后清理池"只能退化为轮询/弱引用近似——但 `WeakRef(DEFERRED)` 的官方"内存不足回收"语义可兜底防 OOM，风险等级由高降为中 |
 
 ---
 
@@ -53,9 +53,18 @@
 | 写屏障 | 非分代用 SATB（`EnumBarrier.cpp`）；分代用 remembered-set（`RSetUpdateBarrier.cpp`） | 池中对象被 GC 搬移后，**池必须通过引用（而非裸指针）访问对象** |
 | GC 回调 | 运行时内部有 `PreGarbageCollection` / `PostGarbageCollection` 虚函数（`TracingCollector.h`），但**未导出为 Cangjie 可调用符号**；标准库侧无任何注册接口 | **Go 的 `poolCleanup`（每次 GC 后清空 victim cache）无直接对应物** |
 | GC 计数 | `g_gcCount++`（`CopyCollector.cpp:67`），经 `MCC_GetGCCount` 暴露；标准库 `std.runtime.getGCCount()` 可读（仅 `cjnative` 后端） | 可用作**轮询式**清理触发器 |
-| 弱引用 | `std.ref.WeakRef<T>` + `CleanupPolicy.EAGER / DEFERRED`（"内存不足时才清理，适合做缓存"） | **可实现 Go 式"软引用池"的近似语义** |
+| 弱引用 | `std.ref.WeakRef<T>` + `CleanupPolicy.EAGER / DEFERRED`（[官方文档](file:///workspace/cj/cangjie_runtime/stdlib/libs/std/ref/weak_ref.cj)：DEFERRED 为"内存不足时才回收"的软引用语义，官方定位即"缓存、对象池"；EAGER 为"尽快回收"，适合监听器自动注销，**不适合池**） | **DEFERRED 提供空间维度的池收缩通道（防 OOM），无需 GC 回调也无需轮询** |
 
 **这是本次评估的核心约束**：Go `sync.Pool` 依赖 `poolCleanup` 在每轮 GC 后把 `local` 池降级为 `victim` 池并在下一轮丢弃，从而保证池不无限增长、对象能最终被回收。仓颉运行时**内部有 GC 阶段钩子但未对外暴露**，标准库无法注册回调。
+
+**缓解因素**：`std.ref.WeakRef(DEFERRED)` 官方语义（"内存不足时自动回收，避免 OOM"）为池提供了**空间驱动**的兜底收缩通道——GC 压力大时池中弱引用对象可被自动回收，最坏情况从"池膨胀占内存"降为"池暂不收缩但 GC 可自动放对象"。因此池设计变为**两条清理路线可选**：
+
+| victim 层实现 | 清理时机 | 命中率 | 本质 |
+|---|---|---|---|
+| 强引用 victim + `getGCCount()` 轮询降级 | 确定性：每轮 GC 后惰性降级 | 高（Go 同级） | **时间驱动**清理（Go 语义） |
+| `WeakRef(DEFERRED)` 做 victim | 不确定：内存压力驱动 | 波动大（GC 心情决定） | **空间驱动**清理（Java SoftReference 语义） |
+
+注意：**local 层必须强引用**（"刚 Put 就 Get"的复用是池收益主体）；DEFERRED 解决"内存上限"但不解决"对象失效节奏"——对象带状态且 Reset 昂贵、或 benchmark 需要可复现行为时，仍需轮询降级。DEFERRED 的触发粒度（阈值、是否仅老年代 GC 触发）文档未写明，落地时需实测校准。
 
 ### 2.4 已有先例：仓颉其实**已经有一个被废弃的对象池**
 
@@ -108,7 +117,9 @@ Pool<T>
  ├─ per-CJThread 本地槽：ConcurrentRingPool<T>（每线程一个，CAS 无锁）
  ├─ 全局兜底：ConcurrentLinkedQueue<T>
  ├─ victim 缓存：WeakRef<T>(DEFERRED) 列表
- └─ 清理触发：轮询 std.runtime.getGCCount()，计数变化时执行 local→victim 降级
+ └─ 清理触发（二选一或组合）：
+      a. 轮询 std.runtime.getGCCount()，计数变化时执行 local→victim 降级（时间驱动，确定性）
+      b. victim 层用 WeakRef(DEFERRED)（空间驱动，内存压力下 GC 自动回收，防 OOM 兜底）
 ```
 
 - **优势**：零运行时/编译器改动；只影响 `cjnative` 后端的性能路径，解释器后端可优雅降级
@@ -138,7 +149,7 @@ Pool<T>
 |---|---|---|
 | `Pool<T>` 核心 API | `Get() : ?T`、`Put(T)`、`New` 工厂、`Reset` 回调 | 1.5 |
 | 无锁本地容器 | 复用/裁剪 `ConcurrentRingPool`，泛型化为 `Pool<T>` | 1.0 |
-| GC 降级逻辑 | `getGCCount()` 轮询 + local→victim 降级 + `WeakRef` 软引用 | 1.0 |
+| GC 降级逻辑 | `getGCCount()` 轮询 + local→victim 降级 + `WeakRef(DEFERRED)` 软引用兜底（若 MVP 选纯 DEFERRED 路线可省去轮询，进一步压缩至 ~4 人日） | 1.0 |
 | 后端兼容 | 解释器后端降级为纯锁实现（`@When` 分支） | 0.5 |
 | 单元测试 + 并发压测 | 正确性、GC 交互、竞态检测 | 1.0 |
 | Benchmark | 分配速率 / 延迟对比（vs 无池） | 0.5 |
@@ -169,7 +180,7 @@ Pool<T>
 
 ### 风险清单
 
-1. **【高】GC 回调缺失** —— 不做运行时改动就无法实现 Go 的精确 `poolCleanup` 语义。建议先用 `getGCCount()` 轮询 + `WeakRef` 做 MVP，把运行时钩子作为后续增强。
+1. **【中·已下调】GC 回调缺失** —— 不做运行时改动就无法实现 Go 的精确 `poolCleanup` 语义。缓解：`WeakRef(DEFERRED)` 官方"内存不足回收"语义提供空间维度兜底（防 OOM）。建议 MVP 用 `WeakRef(DEFERRED)` 做 victim 层（免轮询、全后端可用），需要确定性失效节奏时再叠加 `getGCCount()` 轮询；DEFERRED 的实际触发粒度（阈值、是否仅老年代 GC）需落地时实测校准。运行时钩子导出作为方案 B 的后续增强。
 2. **【中】复制式 GC 与对象移动** —— 池内对象在 GC 后地址改变，**池必须持有强引用（`Object`）而非裸指针**。若未来做"裸内存池"，必须额外处理移动问题。
 3. **【中】解释器后端无 GC 计数** —— `std.runtime.getGCCount()` 是 `@When[backend == "cjnative"]`，解释器后端需另找降级路径（可用 `WeakRef` 单独兜底）。
 4. **【中】`std.core.ThreadLocal` 不适合做池容器** —— 哈希探测 + `Box` 装箱开销会吃掉池的收益，必须用 `ConcurrentRingPool` 这类专用结构。
